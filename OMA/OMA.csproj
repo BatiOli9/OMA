@@ -46,25 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FORMS\Index.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FORMS\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORMS\index.cs">
+    <Compile Include="FORMS\Welcome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORMS\index.Designer.cs">
-      <DependentUpon>index.cs</DependentUpon>
+    <Compile Include="FORMS\Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FORMS\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORMS\index.resx">
-      <DependentUpon>index.cs</DependentUpon>
+    <EmbeddedResource Include="FORMS\Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -96,7 +96,7 @@
     <None Include="Resources\user-solid.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DESIGNS\" />
+    <Folder Include="Resources\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gear-solid.png" />
