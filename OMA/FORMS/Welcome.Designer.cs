@@ -50,11 +50,11 @@ namespace OMA.FORMS
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("DM Sans", 20F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(377, 9);
+            this.label1.Location = new System.Drawing.Point(402, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(239, 39);
+            this.label1.Size = new System.Drawing.Size(186, 35);
             this.label1.TabIndex = 1;
             this.label1.Text = "Iniciar Sesion";
             // 

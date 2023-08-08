@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OMA
+namespace OMA.FORMS
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace OMA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Index());
+            Application.Run(new Welcome());
         }
     }
 }
