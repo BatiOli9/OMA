@@ -101,5 +101,8 @@
   <ItemGroup>
     <None Include="Resources\gear-solid.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OMA-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
