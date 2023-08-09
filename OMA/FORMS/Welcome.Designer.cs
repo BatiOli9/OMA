@@ -36,8 +36,8 @@ namespace OMA.FORMS
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,22 +55,22 @@ namespace OMA.FORMS
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("DM Sans", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(402, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 35);
+            this.label1.Size = new System.Drawing.Size(191, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Iniciar Sesion";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("DM Sans", 13F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(331, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 24);
+            this.label2.Size = new System.Drawing.Size(42, 22);
             this.label2.TabIndex = 2;
             this.label2.Text = "Mail";
             // 
@@ -91,11 +91,11 @@ namespace OMA.FORMS
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("DM Sans", 13F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(331, 155);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 24);
+            this.label3.Size = new System.Drawing.Size(89, 22);
             this.label3.TabIndex = 4;
             this.label3.Text = "Password";
             // 
@@ -105,13 +105,31 @@ namespace OMA.FORMS
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("DM Sans", 16F, System.Drawing.FontStyle.Bold);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(400, 231);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(162, 43);
             this.button1.TabIndex = 6;
             this.button1.Text = "Ingresar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Underline);
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(284, 281);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(392, 47);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "Sino, click aqui para registrarse";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox1
             // 
@@ -122,22 +140,6 @@ namespace OMA.FORMS
             this.pictureBox1.Size = new System.Drawing.Size(289, 275);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("DM Sans", 10F, System.Drawing.FontStyle.Underline);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(284, 281);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(392, 47);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Sino, click aqui para registrarse";
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // Welcome
             // 

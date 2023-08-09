@@ -31,13 +31,13 @@ namespace OMA
         {
             this.header = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -47,10 +47,10 @@ namespace OMA
             // header
             // 
             this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(195)))), ((int)(((byte)(255)))));
-            this.header.Controls.Add(this.button5);
             this.header.Controls.Add(this.button4);
-            this.header.Controls.Add(this.button3);
             this.header.Controls.Add(this.button2);
+            this.header.Controls.Add(this.button5);
+            this.header.Controls.Add(this.button3);
             this.header.Controls.Add(this.button1);
             this.header.Dock = System.Windows.Forms.DockStyle.Top;
             this.header.Location = new System.Drawing.Point(0, 0);
@@ -73,21 +73,6 @@ namespace OMA
             this.button5.Text = "OMA";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button4
-            // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(523, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(141, 79);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Log In";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
             // button3
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -102,21 +87,6 @@ namespace OMA
             this.button3.TabIndex = 7;
             this.button3.Text = "Regulacion";
             this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(670, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 79);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Register";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -160,7 +130,7 @@ namespace OMA
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(215, 44);
             this.button7.TabIndex = 12;
-            this.button7.Text = "Iniciar Sesion";
+            this.button7.Text = "Mi cuenta";
             this.button7.UseVisualStyleBackColor = false;
             // 
             // button8
@@ -177,6 +147,37 @@ namespace OMA
             this.button8.TabIndex = 11;
             this.button8.Text = "Productos";
             this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(520, 1);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(141, 79);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Mi Carrito";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(667, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(141, 79);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "Cerrar Sesion";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button9
             // 
@@ -240,10 +241,7 @@ namespace OMA
         #endregion
 
         private System.Windows.Forms.Panel header;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
@@ -251,6 +249,9 @@ namespace OMA
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button2;
     }
 }
 
