@@ -115,7 +115,7 @@ namespace OMA
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(215, 44);
             this.button6.TabIndex = 13;
-            this.button6.Text = "Productos";
+            this.button6.Text = "Ajustes";
             this.button6.UseVisualStyleBackColor = false;
             // 
             // button7
@@ -156,11 +156,11 @@ namespace OMA
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(520, 1);
+            this.button2.Location = new System.Drawing.Point(650, 1);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(141, 79);
             this.button2.TabIndex = 10;
-            this.button2.Text = "Mi Carrito";
+            this.button2.Text = "Mi Cuenta";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -171,13 +171,12 @@ namespace OMA
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(667, 0);
+            this.button4.Location = new System.Drawing.Point(507, 1);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(141, 79);
             this.button4.TabIndex = 11;
-            this.button4.Text = "Cerrar Sesion";
+            this.button4.Text = "Ajustes";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button9
             // 
@@ -217,6 +216,7 @@ namespace OMA
             this.button11.Size = new System.Drawing.Size(215, 263);
             this.button11.TabIndex = 8;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // Index
             // 

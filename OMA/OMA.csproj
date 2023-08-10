@@ -52,6 +52,12 @@
     <Compile Include="FORMS\Index.Designer.cs">
       <DependentUpon>Index.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\Register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FORMS\Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
@@ -112,6 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\OMA-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiador.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

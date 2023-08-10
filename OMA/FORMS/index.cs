@@ -21,5 +21,11 @@ namespace OMA
         {
             
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Productos ventana = new Productos();
+
+        }
     }
 }
