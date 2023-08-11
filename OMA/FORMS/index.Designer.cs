@@ -1,17 +1,17 @@
 ﻿
-namespace OMA
+namespace OMA.FORMS
 {
     partial class Index
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,218 +21,221 @@ namespace OMA
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.header = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.settings = new System.Windows.Forms.Button();
+            this.account = new System.Windows.Forms.Button();
+            this.OMA = new System.Windows.Forms.Button();
+            this.regulation = new System.Windows.Forms.Button();
+            this.shop = new System.Windows.Forms.Button();
+            this.settingsButton = new System.Windows.Forms.Button();
+            this.userButton = new System.Windows.Forms.Button();
+            this.shopButton = new System.Windows.Forms.Button();
+            this.settingsButtonInterface = new System.Windows.Forms.Button();
+            this.userButtonInterface = new System.Windows.Forms.Button();
+            this.shopButtonInterface = new System.Windows.Forms.Button();
             this.header.SuspendLayout();
             this.SuspendLayout();
             // 
             // header
             // 
             this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(195)))), ((int)(((byte)(255)))));
-            this.header.Controls.Add(this.button4);
-            this.header.Controls.Add(this.button2);
-            this.header.Controls.Add(this.button5);
-            this.header.Controls.Add(this.button3);
-            this.header.Controls.Add(this.button1);
+            this.header.Controls.Add(this.settings);
+            this.header.Controls.Add(this.account);
+            this.header.Controls.Add(this.OMA);
+            this.header.Controls.Add(this.regulation);
+            this.header.Controls.Add(this.shop);
             this.header.Dock = System.Windows.Forms.DockStyle.Top;
             this.header.Location = new System.Drawing.Point(0, 0);
             this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(828, 80);
-            this.header.TabIndex = 0;
+            this.header.Size = new System.Drawing.Size(800, 80);
+            this.header.TabIndex = 1;
             // 
-            // button5
+            // settings
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(308, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(213, 79);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "OMA";
-            this.button5.UseVisualStyleBackColor = false;
+            this.settings.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.settings.BackColor = System.Drawing.Color.Transparent;
+            this.settings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settings.FlatAppearance.BorderSize = 0;
+            this.settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settings.Location = new System.Drawing.Point(493, 1);
+            this.settings.Name = "settings";
+            this.settings.Size = new System.Drawing.Size(141, 79);
+            this.settings.TabIndex = 11;
+            this.settings.Text = "Ajustes";
+            this.settings.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // account
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(164, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 79);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Regulacion";
-            this.button3.UseVisualStyleBackColor = false;
+            this.account.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.account.BackColor = System.Drawing.Color.Transparent;
+            this.account.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.account.FlatAppearance.BorderSize = 0;
+            this.account.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.account.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.account.Location = new System.Drawing.Point(636, 1);
+            this.account.Name = "account";
+            this.account.Size = new System.Drawing.Size(141, 79);
+            this.account.TabIndex = 10;
+            this.account.Text = "Mi Cuenta";
+            this.account.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // OMA
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(17, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 79);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Tienda";
-            this.button1.UseVisualStyleBackColor = false;
+            this.OMA.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.OMA.BackColor = System.Drawing.Color.Transparent;
+            this.OMA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.OMA.FlatAppearance.BorderSize = 0;
+            this.OMA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OMA.Location = new System.Drawing.Point(294, 0);
+            this.OMA.Name = "OMA";
+            this.OMA.Size = new System.Drawing.Size(213, 79);
+            this.OMA.TabIndex = 9;
+            this.OMA.Text = "OMA";
+            this.OMA.UseVisualStyleBackColor = false;
+            this.OMA.Click += new System.EventHandler(this.OMA_Click);
             // 
-            // button6
+            // regulation
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(572, 414);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(215, 44);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Ajustes";
-            this.button6.UseVisualStyleBackColor = false;
+            this.regulation.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.regulation.BackColor = System.Drawing.Color.Transparent;
+            this.regulation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.regulation.FlatAppearance.BorderSize = 0;
+            this.regulation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.regulation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regulation.Location = new System.Drawing.Point(150, 0);
+            this.regulation.Name = "regulation";
+            this.regulation.Size = new System.Drawing.Size(141, 79);
+            this.regulation.TabIndex = 7;
+            this.regulation.Text = "Regulacion";
+            this.regulation.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // shop
             // 
-            this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(306, 414);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(215, 44);
-            this.button7.TabIndex = 12;
-            this.button7.Text = "Mi cuenta";
-            this.button7.UseVisualStyleBackColor = false;
+            this.shop.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.shop.BackColor = System.Drawing.Color.Transparent;
+            this.shop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.shop.FlatAppearance.BorderSize = 0;
+            this.shop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.shop.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shop.Location = new System.Drawing.Point(3, 0);
+            this.shop.Name = "shop";
+            this.shop.Size = new System.Drawing.Size(141, 79);
+            this.shop.TabIndex = 5;
+            this.shop.Text = "Tienda";
+            this.shop.UseVisualStyleBackColor = false;
+            this.shop.Click += new System.EventHandler(this.shop_Click);
             // 
-            // button8
+            // settingsButton
             // 
-            this.button8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(39, 414);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(215, 44);
-            this.button8.TabIndex = 11;
-            this.button8.Text = "Productos";
-            this.button8.UseVisualStyleBackColor = false;
+            this.settingsButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.settingsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.settingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsButton.FlatAppearance.BorderSize = 0;
+            this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsButton.Location = new System.Drawing.Point(560, 409);
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.Size = new System.Drawing.Size(215, 44);
+            this.settingsButton.TabIndex = 19;
+            this.settingsButton.Text = "Ajustes";
+            this.settingsButton.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // userButton
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(650, 1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 79);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Mi Cuenta";
-            this.button2.UseVisualStyleBackColor = false;
+            this.userButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.userButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.userButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.userButton.FlatAppearance.BorderSize = 0;
+            this.userButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.userButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userButton.Location = new System.Drawing.Point(294, 409);
+            this.userButton.Name = "userButton";
+            this.userButton.Size = new System.Drawing.Size(215, 44);
+            this.userButton.TabIndex = 18;
+            this.userButton.Text = "Mi cuenta";
+            this.userButton.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // shopButton
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(507, 1);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(141, 79);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Ajustes";
-            this.button4.UseVisualStyleBackColor = false;
+            this.shopButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.shopButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.shopButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.shopButton.FlatAppearance.BorderSize = 0;
+            this.shopButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.shopButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shopButton.Location = new System.Drawing.Point(27, 409);
+            this.shopButton.Name = "shopButton";
+            this.shopButton.Size = new System.Drawing.Size(215, 44);
+            this.shopButton.TabIndex = 17;
+            this.shopButton.Text = "Productos";
+            this.shopButton.UseVisualStyleBackColor = false;
+            this.shopButton.Click += new System.EventHandler(this.shopButton_Click);
             // 
-            // button9
+            // settingsButtonInterface
             // 
-            this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button9.BackColor = System.Drawing.Color.White;
-            this.button9.BackgroundImage = global::OMA.Properties.Resources.gear_solid;
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Location = new System.Drawing.Point(572, 125);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(215, 263);
-            this.button9.TabIndex = 10;
-            this.button9.UseVisualStyleBackColor = false;
+            this.settingsButtonInterface.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.settingsButtonInterface.BackColor = System.Drawing.Color.White;
+            this.settingsButtonInterface.BackgroundImage = global::OMA.Properties.Resources.gear_solid;
+            this.settingsButtonInterface.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.settingsButtonInterface.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsButtonInterface.Location = new System.Drawing.Point(560, 120);
+            this.settingsButtonInterface.Name = "settingsButtonInterface";
+            this.settingsButtonInterface.Size = new System.Drawing.Size(215, 263);
+            this.settingsButtonInterface.TabIndex = 16;
+            this.settingsButtonInterface.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // userButtonInterface
             // 
-            this.button10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button10.BackColor = System.Drawing.Color.White;
-            this.button10.BackgroundImage = global::OMA.Properties.Resources.user_solid;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.Location = new System.Drawing.Point(306, 125);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(215, 263);
-            this.button10.TabIndex = 9;
-            this.button10.UseVisualStyleBackColor = false;
+            this.userButtonInterface.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.userButtonInterface.BackColor = System.Drawing.Color.White;
+            this.userButtonInterface.BackgroundImage = global::OMA.Properties.Resources.user_solid;
+            this.userButtonInterface.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.userButtonInterface.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.userButtonInterface.Location = new System.Drawing.Point(294, 120);
+            this.userButtonInterface.Name = "userButtonInterface";
+            this.userButtonInterface.Size = new System.Drawing.Size(215, 263);
+            this.userButtonInterface.TabIndex = 15;
+            this.userButtonInterface.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // shopButtonInterface
             // 
-            this.button11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button11.BackColor = System.Drawing.Color.White;
-            this.button11.BackgroundImage = global::OMA.Properties.Resources.cart_shopping_solid_1;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.Location = new System.Drawing.Point(39, 125);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(215, 263);
-            this.button11.TabIndex = 8;
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.shopButtonInterface.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.shopButtonInterface.BackColor = System.Drawing.Color.White;
+            this.shopButtonInterface.BackgroundImage = global::OMA.Properties.Resources.cart_shopping_solid_1;
+            this.shopButtonInterface.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.shopButtonInterface.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.shopButtonInterface.Location = new System.Drawing.Point(27, 120);
+            this.shopButtonInterface.Name = "shopButtonInterface";
+            this.shopButtonInterface.Size = new System.Drawing.Size(215, 263);
+            this.shopButtonInterface.TabIndex = 14;
+            this.shopButtonInterface.UseVisualStyleBackColor = false;
+            this.shopButtonInterface.Click += new System.EventHandler(this.shopButtonInterface_Click);
             // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(828, 504);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button11);
+            this.ClientSize = new System.Drawing.Size(800, 508);
+            this.Controls.Add(this.settingsButton);
+            this.Controls.Add(this.userButton);
+            this.Controls.Add(this.shopButton);
+            this.Controls.Add(this.settingsButtonInterface);
+            this.Controls.Add(this.userButtonInterface);
+            this.Controls.Add(this.shopButtonInterface);
             this.Controls.Add(this.header);
             this.Name = "Index";
-            this.Text = "OMA";
+            this.Text = "Index";
             this.header.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -241,17 +244,16 @@ namespace OMA
         #endregion
 
         private System.Windows.Forms.Panel header;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button settings;
+        private System.Windows.Forms.Button account;
+        private System.Windows.Forms.Button OMA;
+        private System.Windows.Forms.Button regulation;
+        private System.Windows.Forms.Button shop;
+        private System.Windows.Forms.Button settingsButton;
+        private System.Windows.Forms.Button userButton;
+        private System.Windows.Forms.Button shopButton;
+        private System.Windows.Forms.Button settingsButtonInterface;
+        private System.Windows.Forms.Button userButtonInterface;
+        private System.Windows.Forms.Button shopButtonInterface;
     }
 }
-

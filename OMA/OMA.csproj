@@ -125,5 +125,11 @@
   <ItemGroup>
     <None Include="Resources\limpiador.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cable USB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cepillo-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

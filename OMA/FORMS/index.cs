@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OMA
+namespace OMA.FORMS
 {
     public partial class Index : Form
     {
@@ -17,15 +17,32 @@ namespace OMA
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button11_Click(object sender, EventArgs e)
+        private void shopButton_Click(object sender, EventArgs e)
         {
             Productos ventana = new Productos();
+            ventana.Show();
+            this.Hide();
+        }
 
+        private void shopButtonInterface_Click(object sender, EventArgs e)
+        {
+            Productos ventana = new Productos();
+            ventana.Show();
+            this.Hide();
+        }
+
+        private void shop_Click(object sender, EventArgs e)
+        {
+            Productos ventana = new Productos();
+            ventana.Show();
+            this.Hide();
+        }
+
+        private void OMA_Click(object sender, EventArgs e)
+        {
+            Index ventana = new Index();
+            ventana.Show();
+            this.Hide();
         }
     }
 }

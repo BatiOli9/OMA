@@ -16,5 +16,19 @@ namespace OMA.FORMS
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Index ventana = new Index();
+            ventana.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Productos ventana = new Productos();
+            ventana.Show();
+            this.Hide();
+        }
     }
 }
