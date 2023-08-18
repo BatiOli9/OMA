@@ -35,10 +35,10 @@ namespace OMA.FORMS
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbMail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbUser = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -114,12 +114,12 @@ namespace OMA.FORMS
             this.label3.TabIndex = 13;
             this.label3.Text = "Password";
             // 
-            // textBox1
+            // tbMail
             // 
-            this.textBox1.Location = new System.Drawing.Point(333, 123);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(307, 20);
-            this.textBox1.TabIndex = 12;
+            this.tbMail.Location = new System.Drawing.Point(333, 123);
+            this.tbMail.Name = "tbMail";
+            this.tbMail.Size = new System.Drawing.Size(307, 20);
+            this.tbMail.TabIndex = 12;
             // 
             // label2
             // 
@@ -143,12 +143,12 @@ namespace OMA.FORMS
             this.label1.TabIndex = 10;
             this.label1.Text = "Registrarse";
             // 
-            // textBox3
+            // tbUser
             // 
-            this.textBox3.Location = new System.Drawing.Point(333, 74);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(307, 20);
-            this.textBox3.TabIndex = 18;
+            this.tbUser.Location = new System.Drawing.Point(333, 74);
+            this.tbUser.Name = "tbUser";
+            this.tbUser.Size = new System.Drawing.Size(307, 20);
+            this.tbUser.TabIndex = 18;
             // 
             // label4
             // 
@@ -167,13 +167,13 @@ namespace OMA.FORMS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(701, 334);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbUser);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbMail);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -194,10 +194,10 @@ namespace OMA.FORMS
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbMail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbUser;
         private System.Windows.Forms.Label label4;
     }
 }

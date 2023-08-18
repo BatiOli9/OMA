@@ -37,10 +37,10 @@ namespace OMA.FORMS
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.mailTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.passTb = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -137,15 +137,15 @@ namespace OMA.FORMS
             this.lineShape1.Y1 = 195;
             this.lineShape1.Y2 = 218;
             // 
-            // textBox1
+            // mailTb
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Black;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(338, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(338, 26);
-            this.textBox1.TabIndex = 11;
+            this.mailTb.BackColor = System.Drawing.Color.Black;
+            this.mailTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.mailTb.ForeColor = System.Drawing.Color.White;
+            this.mailTb.Location = new System.Drawing.Point(338, 84);
+            this.mailTb.Name = "mailTb";
+            this.mailTb.Size = new System.Drawing.Size(338, 26);
+            this.mailTb.TabIndex = 11;
             // 
             // label2
             // 
@@ -169,15 +169,15 @@ namespace OMA.FORMS
             this.label3.TabIndex = 15;
             this.label3.Text = "PASSWORD";
             // 
-            // textBox2
+            // passTb
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Black;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(338, 167);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(338, 26);
-            this.textBox2.TabIndex = 14;
+            this.passTb.BackColor = System.Drawing.Color.Black;
+            this.passTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.passTb.ForeColor = System.Drawing.Color.White;
+            this.passTb.Location = new System.Drawing.Point(338, 167);
+            this.passTb.Name = "passTb";
+            this.passTb.Size = new System.Drawing.Size(338, 26);
+            this.passTb.TabIndex = 14;
             // 
             // Welcome
             // 
@@ -186,9 +186,9 @@ namespace OMA.FORMS
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(708, 328);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.passTb);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.mailTb);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -196,6 +196,7 @@ namespace OMA.FORMS
             this.Controls.Add(this.shapeContainer1);
             this.Name = "Welcome";
             this.Text = "Welcome";
+            this.Load += new System.EventHandler(this.Welcome_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -213,9 +214,9 @@ namespace OMA.FORMS
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox mailTb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox passTb;
     }
 }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace OMA.FORMS
 {
@@ -15,6 +17,10 @@ namespace OMA.FORMS
         public Register()
         {
             InitializeComponent();
+
+            OleDbConnection conexion = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_OMA.mdb");
+            OleDbCommand cmd = new OleDbCommand();
+            OleDbDataAdapter da = new OleDbDataAdapter();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -26,9 +32,10 @@ namespace OMA.FORMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Index ventana = new Index();
-            ventana.Show();
-            this.Hide();
+            if (tbUser.Text == "" && textBox2.Text == "" && tbMail.Text == "")
+            {
+                MessageBox.Show("Tenes que completar todos los campos para poder registrarte", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
