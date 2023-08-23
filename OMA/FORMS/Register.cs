@@ -32,9 +32,14 @@ namespace OMA.FORMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (tbUser.Text == "" && textBox2.Text == "" && tbMail.Text == "")
+            if (tbUser.Text == "" || textBox2.Text == "" || tbMail.Text == "")
             {
                 MessageBox.Show("Tenes que completar todos los campos para poder registrarte", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                tbUser.Clear();
+                textBox2.Clear();
+                tbMail.Clear();
+            }
             }
         }
     }
