@@ -14,13 +14,11 @@ namespace OMA.FORMS
 {
     public partial class Register : Form
     {
+        private Conexion mConexion;
         public Register()
         {
             InitializeComponent();
-
-            OleDbConnection conexion = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_OMA.mdb");
-            OleDbCommand cmd = new OleDbCommand();
-            OleDbDataAdapter da = new OleDbDataAdapter();
+            mConexion = new Conexion();
         }
 
         private void button4_Click(object sender, EventArgs e)
