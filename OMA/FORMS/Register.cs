@@ -7,18 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms;
 using System.Data.OleDb;
+using MySqlConnector;
 
 namespace OMA.FORMS
 {
     public partial class Register : Form
     {
-        private Conexion mConexion;
         public Register()
         {
             InitializeComponent();
-            mConexion = new Conexion();
+            Conexion objetoconexion = new Conexion();
+            objetoconexion.getConexion();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -37,7 +37,6 @@ namespace OMA.FORMS
                 tbUser.Clear();
                 textBox2.Clear();
                 tbMail.Clear();
-            }
             }
         }
     }

@@ -40,6 +40,7 @@ namespace OMA.FORMS
             this.label1 = new System.Windows.Forms.Label();
             this.tbUser = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -161,12 +162,22 @@ namespace OMA.FORMS
             this.label4.TabIndex = 17;
             this.label4.Text = "Username";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(295, 220);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "test";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(701, 334);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.tbUser);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button4);
@@ -199,5 +210,6 @@ namespace OMA.FORMS
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbUser;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button2;
     }
 }

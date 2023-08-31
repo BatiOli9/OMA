@@ -1,13 +1,14 @@
-﻿using MySql.Data.MySqlClient;
+﻿using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace OMA.FORMS
 {
-    internal class Conexion
+     class Conexion
     {
         private MySqlConnection conexion;
         private string server = "oliverdatabase.c3n2knxyysc4.sa-east-1.rds.amazonaws.com";
@@ -21,15 +22,21 @@ namespace OMA.FORMS
             cadenaConexion = "Database=" + database + "; DataSource=" + server + "; User Id=" + user + "; Password=" + password;
         }
 
-        public MySqlConnection getConexion()
+        public void getConexion()
         {
-            if (conexion == null)
+            conexion = new MySqlConnection();
+
+            try
             {
-                conexion = new MySqlConnection(cadenaConexion);
+                conexion.ConnectionString = cadenaConexion;
                 conexion.Open();
+                MessageBox.Show("La conexion se establecio correctamente");
+            }
+            catch (MySqlException e)
+            {
+                MessageBox.Show("La conexion no pudo establecerse");
             }
 
-            return conexion;
         }
     }
 }
