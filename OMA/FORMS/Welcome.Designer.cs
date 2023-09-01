@@ -97,6 +97,8 @@ namespace OMA.FORMS
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Underline);
             this.button4.ForeColor = System.Drawing.Color.White;
@@ -140,11 +142,11 @@ namespace OMA.FORMS
             // mailTb
             // 
             this.mailTb.BackColor = System.Drawing.Color.Black;
-            this.mailTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.mailTb.Font = new System.Drawing.Font("DM Sans", 12F);
             this.mailTb.ForeColor = System.Drawing.Color.White;
             this.mailTb.Location = new System.Drawing.Point(338, 84);
             this.mailTb.Name = "mailTb";
-            this.mailTb.Size = new System.Drawing.Size(338, 26);
+            this.mailTb.Size = new System.Drawing.Size(338, 28);
             this.mailTb.TabIndex = 11;
             // 
             // label2
@@ -172,11 +174,11 @@ namespace OMA.FORMS
             // passTb
             // 
             this.passTb.BackColor = System.Drawing.Color.Black;
-            this.passTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.passTb.Font = new System.Drawing.Font("DM Sans", 12F);
             this.passTb.ForeColor = System.Drawing.Color.White;
             this.passTb.Location = new System.Drawing.Point(338, 167);
             this.passTb.Name = "passTb";
-            this.passTb.Size = new System.Drawing.Size(338, 26);
+            this.passTb.Size = new System.Drawing.Size(338, 28);
             this.passTb.TabIndex = 14;
             // 
             // Welcome
@@ -196,7 +198,6 @@ namespace OMA.FORMS
             this.Controls.Add(this.shapeContainer1);
             this.Name = "Welcome";
             this.Text = "Welcome";
-            this.Load += new System.EventHandler(this.Welcome_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

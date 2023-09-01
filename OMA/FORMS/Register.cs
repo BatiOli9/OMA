@@ -14,10 +14,11 @@ namespace OMA.FORMS
 {
     public partial class Register : Form
     {
+        Conexion objetoconexion;
         public Register()
         {
             InitializeComponent();
-            Conexion objetoconexion = new Conexion();
+            objetoconexion = new Conexion();
             objetoconexion.getConexion();
         }
 
@@ -30,13 +31,37 @@ namespace OMA.FORMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (tbUser.Text == "" || textBox2.Text == "" || tbMail.Text == "")
+            if (tbUser.Text == "" || tbPass.Text == "" || tbMail.Text == "" || tbPassConf.Text == "")
             {
                 MessageBox.Show("Tenes que completar todos los campos para poder registrarte", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 tbUser.Clear();
-                textBox2.Clear();
+                tbPass.Clear();
                 tbMail.Clear();
+            }
+            else
+            {
+                MySqlCommand command = new MySqlCommand("INSERT INTO `users`(`mail`, `password`, `username`) VALUES (@mail, @pass, @user)", objetoconexion.getConexion());
+
+                command.Parameters.Add("@user", MySqlDbType.VarChar).Value = tbUser.Text;
+                command.Parameters.Add("@mail", MySqlDbType.VarChar).Value = tbMail.Text;
+                command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = tbPass.Text;
+
+                objetoconexion.getConexion();
+
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Cuenta creada correctamente");
+                    Index ventana = new Index();
+                    ventana.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("ERROR");
+                }
+
+                objetoconexion.closeConexion();
             }
         }
     }

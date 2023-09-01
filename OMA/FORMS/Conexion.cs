@@ -22,7 +22,7 @@ namespace OMA.FORMS
             cadenaConexion = "Database=" + database + "; DataSource=" + server + "; User Id=" + user + "; Password=" + password;
         }
 
-        public void getConexion()
+        public MySqlConnection getConexion()
         {
             conexion = new MySqlConnection();
 
@@ -30,13 +30,18 @@ namespace OMA.FORMS
             {
                 conexion.ConnectionString = cadenaConexion;
                 conexion.Open();
-                MessageBox.Show("La conexion se establecio correctamente");
+                // MessageBox.Show("La conexion se establecio correctamente");
             }
             catch (MySqlException e)
             {
-                MessageBox.Show("La conexion no pudo establecerse");
+                // MessageBox.Show("La conexion no pudo establecerse");
             }
 
+            return conexion;
+        }
+        public void closeConexion()
+        {
+            conexion.Close();
         }
     }
 }
