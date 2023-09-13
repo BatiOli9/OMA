@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
-using MySqlConnector;
+using MySql.Data.MySqlClient;
 
 namespace OMA.FORMS
 {
@@ -41,27 +41,7 @@ namespace OMA.FORMS
             }
             else
             {
-                MySqlCommand command = new MySqlCommand("INSERT INTO `users`(`mail`, `password`, `username`) VALUES (@mail, @pass, @user)", objetoconexion.getConexion());
-
-                command.Parameters.Add("@user", MySqlDbType.VarChar).Value = tbUser.Text;
-                command.Parameters.Add("@mail", MySqlDbType.VarChar).Value = tbMail.Text;
-                command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = tbPass.Text;
-
-                objetoconexion.getConexion();
-
-                if (command.ExecuteNonQuery() == 1)
-                {
-                    MessageBox.Show("Cuenta creada correctamente");
-                    Index ventana = new Index();
-                    ventana.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("ERROR");
-                }
-
-                objetoconexion.closeConexion();
+                MySqlCommand command = new MySqlCommand("INSERT INTO `users`(`mail`, `password`, `username`) VALUES (@mail, @pass, @user)");
             }
         }
     }

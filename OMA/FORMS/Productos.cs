@@ -30,5 +30,12 @@ namespace OMA.FORMS
             ventana.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Regulacion ventana = new Regulacion();
+            ventana.Show();
+            this.Hide();
+        }
     }
 }

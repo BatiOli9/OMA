@@ -55,7 +55,9 @@ namespace OMA.FORMS
                 // check if mail exists or not
                 if (table.Rows.Count > 0)
                 {
-                    MessageBox.Show("YES");
+                    Index ventana = new Index();
+                    ventana.Show();
+                    this.Hide();
                 }
                 else
                 {

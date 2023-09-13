@@ -1,7 +1,7 @@
 ﻿
 namespace OMA.FORMS
 {
-    partial class Index
+    partial class Regulacion
     {
         /// <summary>
         /// Required designer variable.
@@ -35,13 +35,17 @@ namespace OMA.FORMS
             this.OMA = new System.Windows.Forms.Button();
             this.regulation = new System.Windows.Forms.Button();
             this.shop = new System.Windows.Forms.Button();
-            this.settingsButton = new System.Windows.Forms.Button();
-            this.userButton = new System.Windows.Forms.Button();
-            this.shopButton = new System.Windows.Forms.Button();
-            this.settingsButtonInterface = new System.Windows.Forms.Button();
-            this.userButtonInterface = new System.Windows.Forms.Button();
-            this.shopButtonInterface = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.prender = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.label3 = new System.Windows.Forms.Label();
             this.header.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // header
@@ -56,7 +60,7 @@ namespace OMA.FORMS
             this.header.Location = new System.Drawing.Point(0, 0);
             this.header.Name = "header";
             this.header.Size = new System.Drawing.Size(800, 80);
-            this.header.TabIndex = 1;
+            this.header.TabIndex = 2;
             // 
             // settings
             // 
@@ -136,109 +140,100 @@ namespace OMA.FORMS
             this.shop.UseVisualStyleBackColor = false;
             this.shop.Click += new System.EventHandler(this.shop_Click);
             // 
-            // settingsButton
+            // label1
             // 
-            this.settingsButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.settingsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
-            this.settingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsButton.FlatAppearance.BorderSize = 0;
-            this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingsButton.Location = new System.Drawing.Point(560, 409);
-            this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Size = new System.Drawing.Size(215, 44);
-            this.settingsButton.TabIndex = 19;
-            this.settingsButton.Text = "Ajustes";
-            this.settingsButton.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("DM Sans", 18F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(257, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(301, 31);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Regulacion del dispositivo";
             // 
-            // userButton
+            // panel1
             // 
-            this.userButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.userButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
-            this.userButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.userButton.FlatAppearance.BorderSize = 0;
-            this.userButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.userButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userButton.Location = new System.Drawing.Point(294, 409);
-            this.userButton.Name = "userButton";
-            this.userButton.Size = new System.Drawing.Size(215, 44);
-            this.userButton.TabIndex = 18;
-            this.userButton.Text = "Mi cuenta";
-            this.userButton.UseVisualStyleBackColor = false;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.prender);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(184, 139);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(438, 114);
+            this.panel1.TabIndex = 13;
             // 
-            // shopButton
+            // prender
             // 
-            this.shopButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.shopButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
-            this.shopButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.shopButton.FlatAppearance.BorderSize = 0;
-            this.shopButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.shopButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.shopButton.Location = new System.Drawing.Point(27, 409);
-            this.shopButton.Name = "shopButton";
-            this.shopButton.Size = new System.Drawing.Size(215, 44);
-            this.shopButton.TabIndex = 17;
-            this.shopButton.Text = "Productos";
-            this.shopButton.UseVisualStyleBackColor = false;
-            this.shopButton.Click += new System.EventHandler(this.shopButton_Click);
+            this.prender.BackColor = System.Drawing.Color.Lime;
+            this.prender.FlatAppearance.BorderSize = 0;
+            this.prender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.prender.Font = new System.Drawing.Font("DM Sans", 15F);
+            this.prender.ForeColor = System.Drawing.Color.Black;
+            this.prender.Location = new System.Drawing.Point(144, 49);
+            this.prender.Name = "prender";
+            this.prender.Size = new System.Drawing.Size(148, 51);
+            this.prender.TabIndex = 15;
+            this.prender.Text = "Encender";
+            this.prender.UseVisualStyleBackColor = false;
             // 
-            // settingsButtonInterface
+            // label2
             // 
-            this.settingsButtonInterface.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.settingsButtonInterface.BackColor = System.Drawing.Color.White;
-            this.settingsButtonInterface.BackgroundImage = global::OMA.Properties.Resources.gear_solid;
-            this.settingsButtonInterface.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.settingsButtonInterface.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsButtonInterface.Location = new System.Drawing.Point(560, 120);
-            this.settingsButtonInterface.Name = "settingsButtonInterface";
-            this.settingsButtonInterface.Size = new System.Drawing.Size(215, 263);
-            this.settingsButtonInterface.TabIndex = 16;
-            this.settingsButtonInterface.UseVisualStyleBackColor = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("DM Sans", 18F);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(55, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(340, 31);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "El dispositivo esta conectado";
             // 
-            // userButtonInterface
+            // panel2
             // 
-            this.userButtonInterface.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.userButtonInterface.BackColor = System.Drawing.Color.White;
-            this.userButtonInterface.BackgroundImage = global::OMA.Properties.Resources.user_solid;
-            this.userButtonInterface.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.userButtonInterface.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.userButtonInterface.Location = new System.Drawing.Point(294, 120);
-            this.userButtonInterface.Name = "userButtonInterface";
-            this.userButtonInterface.Size = new System.Drawing.Size(215, 263);
-            this.userButtonInterface.TabIndex = 15;
-            this.userButtonInterface.UseVisualStyleBackColor = false;
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.trackBar1);
+            this.panel2.Location = new System.Drawing.Point(68, 281);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(653, 144);
+            this.panel2.TabIndex = 16;
             // 
-            // shopButtonInterface
+            // trackBar1
             // 
-            this.shopButtonInterface.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.shopButtonInterface.BackColor = System.Drawing.Color.White;
-            this.shopButtonInterface.BackgroundImage = global::OMA.Properties.Resources.cart_shopping_solid_1;
-            this.shopButtonInterface.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.shopButtonInterface.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.shopButtonInterface.Location = new System.Drawing.Point(27, 120);
-            this.shopButtonInterface.Name = "shopButtonInterface";
-            this.shopButtonInterface.Size = new System.Drawing.Size(215, 263);
-            this.shopButtonInterface.TabIndex = 14;
-            this.shopButtonInterface.UseVisualStyleBackColor = false;
-            this.shopButtonInterface.Click += new System.EventHandler(this.shopButtonInterface_Click);
+            this.trackBar1.Location = new System.Drawing.Point(6, 49);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(647, 45);
+            this.trackBar1.TabIndex = 17;
             // 
-            // Index
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("DM Sans", 15F);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(7, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(226, 26);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Selecciona la velocidad";
+            // 
+            // Regulacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(800, 508);
-            this.Controls.Add(this.settingsButton);
-            this.Controls.Add(this.userButton);
-            this.Controls.Add(this.shopButton);
-            this.Controls.Add(this.settingsButtonInterface);
-            this.Controls.Add(this.userButtonInterface);
-            this.Controls.Add(this.shopButtonInterface);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.header);
-            this.Name = "Index";
-            this.Text = "Index";
+            this.Name = "Regulacion";
+            this.Text = "Regulacion del dispositivo";
             this.header.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -250,11 +245,12 @@ namespace OMA.FORMS
         private System.Windows.Forms.Button OMA;
         private System.Windows.Forms.Button regulation;
         private System.Windows.Forms.Button shop;
-        private System.Windows.Forms.Button settingsButton;
-        private System.Windows.Forms.Button userButton;
-        private System.Windows.Forms.Button shopButton;
-        private System.Windows.Forms.Button settingsButtonInterface;
-        private System.Windows.Forms.Button userButtonInterface;
-        private System.Windows.Forms.Button shopButtonInterface;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button prender;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TrackBar trackBar1;
     }
 }
