@@ -29,6 +29,7 @@ namespace OMA.FORMS
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.header = new System.Windows.Forms.Panel();
             this.settings = new System.Windows.Forms.Button();
             this.account = new System.Windows.Forms.Button();
@@ -40,12 +41,14 @@ namespace OMA.FORMS
             this.prender = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.velocidad = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.rpmBar = new System.Windows.Forms.TrackBar();
+            this.arduino = new System.IO.Ports.SerialPort(this.components);
             this.header.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rpmBar)).BeginInit();
             this.SuspendLayout();
             // 
             // header
@@ -174,6 +177,7 @@ namespace OMA.FORMS
             this.prender.TabIndex = 15;
             this.prender.Text = "Encender";
             this.prender.UseVisualStyleBackColor = false;
+            this.prender.Click += new System.EventHandler(this.prender_Click_1);
             // 
             // label2
             // 
@@ -189,19 +193,24 @@ namespace OMA.FORMS
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.velocidad);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.trackBar1);
+            this.panel2.Controls.Add(this.rpmBar);
             this.panel2.Location = new System.Drawing.Point(68, 281);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(653, 144);
             this.panel2.TabIndex = 16;
             // 
-            // trackBar1
+            // velocidad
             // 
-            this.trackBar1.Location = new System.Drawing.Point(6, 49);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(647, 45);
-            this.trackBar1.TabIndex = 17;
+            this.velocidad.AutoSize = true;
+            this.velocidad.Font = new System.Drawing.Font("DM Sans", 12F);
+            this.velocidad.ForeColor = System.Drawing.Color.Black;
+            this.velocidad.Location = new System.Drawing.Point(7, 85);
+            this.velocidad.Name = "velocidad";
+            this.velocidad.Size = new System.Drawing.Size(194, 21);
+            this.velocidad.TabIndex = 18;
+            this.velocidad.Text = "Velocidad Seleccionada: ";
             // 
             // label3
             // 
@@ -213,6 +222,15 @@ namespace OMA.FORMS
             this.label3.Size = new System.Drawing.Size(226, 26);
             this.label3.TabIndex = 16;
             this.label3.Text = "Selecciona la velocidad";
+            // 
+            // rpmBar
+            // 
+            this.rpmBar.Location = new System.Drawing.Point(6, 49);
+            this.rpmBar.Maximum = 255;
+            this.rpmBar.Name = "rpmBar";
+            this.rpmBar.Size = new System.Drawing.Size(647, 45);
+            this.rpmBar.TabIndex = 17;
+            this.rpmBar.ValueChanged += new System.EventHandler(this.rpmBar_ValueChanged);
             // 
             // Regulacion
             // 
@@ -231,7 +249,7 @@ namespace OMA.FORMS
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rpmBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,6 +269,8 @@ namespace OMA.FORMS
         private System.Windows.Forms.Button prender;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar rpmBar;
+        private System.IO.Ports.SerialPort arduino;
+        private System.Windows.Forms.Label velocidad;
     }
 }

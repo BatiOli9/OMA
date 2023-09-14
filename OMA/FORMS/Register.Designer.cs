@@ -103,6 +103,7 @@ namespace OMA.FORMS
             // 
             this.tbPass.BackColor = System.Drawing.Color.Black;
             this.tbPass.Font = new System.Drawing.Font("DM Sans", 11F);
+            this.tbPass.ForeColor = System.Drawing.Color.White;
             this.tbPass.Location = new System.Drawing.Point(333, 189);
             this.tbPass.Name = "tbPass";
             this.tbPass.Size = new System.Drawing.Size(307, 27);
@@ -123,6 +124,7 @@ namespace OMA.FORMS
             // 
             this.tbMail.BackColor = System.Drawing.Color.Black;
             this.tbMail.Font = new System.Drawing.Font("DM Sans", 11F);
+            this.tbMail.ForeColor = System.Drawing.Color.White;
             this.tbMail.Location = new System.Drawing.Point(333, 131);
             this.tbMail.Name = "tbMail";
             this.tbMail.Size = new System.Drawing.Size(307, 27);
@@ -154,6 +156,7 @@ namespace OMA.FORMS
             // 
             this.tbUser.BackColor = System.Drawing.Color.Black;
             this.tbUser.Font = new System.Drawing.Font("DM Sans", 11F);
+            this.tbUser.ForeColor = System.Drawing.Color.White;
             this.tbUser.Location = new System.Drawing.Point(333, 74);
             this.tbUser.Name = "tbUser";
             this.tbUser.Size = new System.Drawing.Size(307, 27);
@@ -174,6 +177,7 @@ namespace OMA.FORMS
             // 
             this.tbPassConf.BackColor = System.Drawing.Color.Black;
             this.tbPassConf.Font = new System.Drawing.Font("DM Sans", 11F);
+            this.tbPassConf.ForeColor = System.Drawing.Color.White;
             this.tbPassConf.Location = new System.Drawing.Point(333, 245);
             this.tbPassConf.Name = "tbPassConf";
             this.tbPassConf.Size = new System.Drawing.Size(307, 27);
