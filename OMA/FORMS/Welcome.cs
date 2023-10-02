@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
-using MySqlConnector;
+using MySql.Data.MySqlClient;
 
 namespace OMA.FORMS
 {
@@ -71,6 +71,16 @@ namespace OMA.FORMS
             Register ventana = new Register();
             ventana.Show();
             this.Hide();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

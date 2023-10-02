@@ -51,5 +51,20 @@ namespace OMA.FORMS
             ventana.Show();
             this.Hide();
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void account_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

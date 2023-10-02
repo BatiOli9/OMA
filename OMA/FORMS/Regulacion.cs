@@ -52,7 +52,7 @@ namespace OMA.FORMS
                 prender.BackColor = Color.Red;
                 prender.Text = "Apagar";
                 arduino.PortName = "COM3";
-                arduino.BaudRate = 9600;
+                arduino.BaudRate = 9600; 
                 arduino.Open();
             }
             else if (prender.BackColor == Color.Red)
@@ -90,6 +90,57 @@ namespace OMA.FORMS
 
             string velocidadSelected = velocidadErronea.ToString();
             arduino.WriteLine(velocidadSelected);
+        }
+
+        private void Regulacion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void settings_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void account_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void header_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void shop_Click_1(object sender, EventArgs e)
+        {
+            Productos ventana = new Productos();
+            ventana.Show();
+            this.Hide();
+        }
+
+        private void regulation_Click_1(object sender, EventArgs e)
+        {
+            Regulacion ventana = new Regulacion();
+            ventana.Show();
+            this.Hide();
+        }
+
+        private void OMA_Click_1(object sender, EventArgs e)
+        {
+            Index ventana = new Index();
+            ventana.Show();
+            this.Hide();
         }
     }
 }
