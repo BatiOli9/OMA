@@ -12,10 +12,18 @@ namespace OMA.FORMS
 {
     public partial class Index : Form
     {
+
+        public string AdminRecibido { get; set; }
+
         public Index()
         {
             InitializeComponent();
+
+            MessageBox.Show(AdminRecibido + "estatus");
+
+            adminLbl.Text = AdminRecibido;
         }
+
 
         private void shopButton_Click(object sender, EventArgs e)
         {
@@ -40,9 +48,9 @@ namespace OMA.FORMS
 
         private void OMA_Click(object sender, EventArgs e)
         {
-            Index ventana = new Index();
-            ventana.Show();
-            this.Hide();
+            // Index ventana = new Index();
+            // ventana.Show();
+            // this.Hide();
         }
 
         private void regulation_Click(object sender, EventArgs e)
@@ -63,6 +71,13 @@ namespace OMA.FORMS
         }
 
         private void account_Click(object sender, EventArgs e)
+        {
+            User ventana = new User();
+            ventana.Show();
+            this.Hide();
+        }
+
+        private void adminLbl_Click(object sender, EventArgs e)
         {
 
         }

@@ -22,7 +22,12 @@ namespace OMA.FORMS
 
             objetoconexion = new Conexion();
             objetoconexion.getConexion();
+
+            passTb.PasswordChar = '*';
         }
+        public string usernameResult { get; set; }
+        public string mailResult { get; set; }
+        public string adminCompartir { get; set; }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -52,10 +57,52 @@ namespace OMA.FORMS
 
                 adapter.Fill(table);    
 
-                // check if mail exists or not
                 if (table.Rows.Count > 0)
                 {
+                    MySqlCommand adminCommand = new MySqlCommand("SELECT `admin` FROM `users` WHERE `mail` = @mail;", objetoconexion.getConexion());
+                    MySqlCommand mailCommand = new MySqlCommand("SELECT `mail` FROM `users` WHERE `mail` = @mail;", objetoconexion.getConexion());
+                    MySqlCommand usernameCommand = new MySqlCommand("SELECT `username` FROM `users` WHERE `mail` = @mail;", objetoconexion.getConexion());
+
+                    adminCommand.Parameters.AddWithValue("@mail", mailTb.Text);
+                    mailCommand.Parameters.AddWithValue("@mail", mailTb.Text);
+                    usernameCommand.Parameters.AddWithValue("@mail", mailTb.Text);
+
+                    objetoconexion.getConexion();
+                    MySqlDataReader mailReader = mailCommand.ExecuteReader();
+                    if (mailReader.Read())
+                    {
+                        mailResult = mailReader["mail"].ToString();
+                    }
+                    mailReader.Close();
+
+                    MySqlDataReader userReader = usernameCommand.ExecuteReader();
+                    if (userReader.Read())
+                    {
+                        usernameResult = userReader["username"].ToString();
+                    }
+                    userReader.Close();
+
+                    objetoconexion.closeConexion();
+
+                    object result = command.ExecuteScalar();
+                    if (result != null)
+                    {
+                        bool isAdminn = Convert.ToInt32(result) == 1;
+                        if (isAdminn == true)
+                        {
+                            adminCompartir = "yes";
+                        }
+                        else if (isAdminn == false)
+                        {
+                            adminCompartir = "no";
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se encontraron datos de el admin");
+                    } 
                     Index ventana = new Index();
+                    ventana.AdminRecibido = adminCompartir;
                     ventana.Show();
                     this.Hide();
                 }
@@ -81,6 +128,18 @@ namespace OMA.FORMS
         private void iconButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            if (passTb.PasswordChar == '*')
+            {
+                passTb.PasswordChar = '\0'; // Mostrar texto de la contraseña
+            }
+            else
+            {
+                passTb.PasswordChar = '*'; // Ocultar la contraseña nuevamente
+            }
         }
     }
 }
