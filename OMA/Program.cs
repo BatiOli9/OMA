@@ -11,6 +11,11 @@ namespace OMA.FORMS
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
+        public static string username;
+        public static string mail;
+        public static string password;
+        public static string admin;
+
         [STAThread]
         static void Main()
         {

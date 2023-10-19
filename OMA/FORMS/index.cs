@@ -12,16 +12,22 @@ namespace OMA.FORMS
 {
     public partial class Index : Form
     {
-
-        public string AdminRecibido { get; set; }
-
         public Index()
         {
             InitializeComponent();
+        }
 
-            MessageBox.Show(AdminRecibido + "estatus");
-
-            adminLbl.Text = AdminRecibido;
+        private void Index_Load(object sender, EventArgs e)
+        {
+            if (Program.admin == "yes")
+            {
+                MessageBox.Show("Bienvenido Administrador");
+                adminLbl.Text = "Usuario Administrador";
+            }
+            else
+            {
+                adminLbl.Text = "";
+            }
         }
 
 

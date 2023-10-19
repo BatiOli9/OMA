@@ -15,9 +15,20 @@ namespace OMA.FORMS
         public User()
         {
             InitializeComponent();
-        }
 
-        public string mailRecibido { get; set; }
+            string username = Program.username;
+            string password = Program.password;
+            string mail = Program.mail;
+            string admin = Program.admin;
+
+            MessageBox.Show(Program.mail);
+
+            correoUser.Text = mail;
+            nameUser.Text = username;
+        }
+        private void User_Load(object sender, EventArgs e)
+        {
+        }
 
         private void OMA_Click(object sender, EventArgs e)
         {

@@ -62,23 +62,32 @@ namespace OMA.FORMS
                     MySqlCommand adminCommand = new MySqlCommand("SELECT `admin` FROM `users` WHERE `mail` = @mail;", objetoconexion.getConexion());
                     MySqlCommand mailCommand = new MySqlCommand("SELECT `mail` FROM `users` WHERE `mail` = @mail;", objetoconexion.getConexion());
                     MySqlCommand usernameCommand = new MySqlCommand("SELECT `username` FROM `users` WHERE `mail` = @mail;", objetoconexion.getConexion());
+                    MySqlCommand passwordCommand = new MySqlCommand("SELECT `password` FROM `users` WHERE `mail` = @mail;", objetoconexion.getConexion());
 
                     adminCommand.Parameters.AddWithValue("@mail", mailTb.Text);
                     mailCommand.Parameters.AddWithValue("@mail", mailTb.Text);
                     usernameCommand.Parameters.AddWithValue("@mail", mailTb.Text);
+                    passwordCommand.Parameters.AddWithValue("@mail", mailTb.Text);
 
                     objetoconexion.getConexion();
                     MySqlDataReader mailReader = mailCommand.ExecuteReader();
                     if (mailReader.Read())
                     {
-                        mailResult = mailReader["mail"].ToString();
+                        Program.mail = mailReader["mail"].ToString();
                     }
                     mailReader.Close();
+
+                    MySqlDataReader passReader = passwordCommand.ExecuteReader();
+                    if (passReader.Read())
+                    {
+                        Program.password = passReader["password"].ToString();
+                    }
+                    passReader.Close();
 
                     MySqlDataReader userReader = usernameCommand.ExecuteReader();
                     if (userReader.Read())
                     {
-                        usernameResult = userReader["username"].ToString();
+                        Program.username = userReader["username"].ToString();
                     }
                     userReader.Close();
 
@@ -90,19 +99,21 @@ namespace OMA.FORMS
                         bool isAdminn = Convert.ToInt32(result) == 1;
                         if (isAdminn == true)
                         {
-                            adminCompartir = "yes";
+                            Program.admin = "yes";
                         }
                         else if (isAdminn == false)
                         {
-                            adminCompartir = "no";
+                            Program.admin = "no";
                         }
                     }
                     else
                     {
                         MessageBox.Show("No se encontraron datos de el admin");
-                    } 
+                    }
+                    //User userForm = new User();
+                    //User.username = usernameResult;
+
                     Index ventana = new Index();
-                    ventana.AdminRecibido = adminCompartir;
                     ventana.Show();
                     this.Hide();
                 }

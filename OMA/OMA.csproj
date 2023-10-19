@@ -149,11 +149,11 @@
     <Compile Include="FORMS\Regulacion.Designer.cs">
       <DependentUpon>Regulacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORMS\User.cs">
+    <Compile Include="FORMS\user.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORMS\User.Designer.cs">
-      <DependentUpon>User.cs</DependentUpon>
+    <Compile Include="FORMS\user.Designer.cs">
+      <DependentUpon>user.cs</DependentUpon>
     </Compile>
     <Compile Include="FORMS\Welcome.cs">
       <SubType>Form</SubType>
@@ -181,8 +181,8 @@
     <EmbeddedResource Include="FORMS\Regulacion.resx">
       <DependentUpon>Regulacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORMS\User.resx">
-      <DependentUpon>User.cs</DependentUpon>
+    <EmbeddedResource Include="FORMS\user.resx">
+      <DependentUpon>user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>

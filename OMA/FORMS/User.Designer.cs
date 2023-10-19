@@ -39,13 +39,17 @@ namespace OMA.FORMS
             this.regulation = new System.Windows.Forms.Button();
             this.shop = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.correoUser = new System.Windows.Forms.Label();
+            this.nameUser = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.header.SuspendLayout();
             this.SuspendLayout();
             // 
             // header
             // 
             this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(195)))), ((int)(((byte)(255)))));
-            this.header.Controls.Add(this.label1);
             this.header.Controls.Add(this.adminLbl);
             this.header.Controls.Add(this.iconButton2);
             this.header.Controls.Add(this.iconButton1);
@@ -196,11 +200,65 @@ namespace OMA.FORMS
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 75);
+            this.label1.Font = new System.Drawing.Font("DM Sans", 10F);
+            this.label1.Location = new System.Drawing.Point(41, 169);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(152, 18);
             this.label1.TabIndex = 29;
-            this.label1.Text = "label1";
+            this.label1.Text = "Usuario Administrador";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("DM Sans", 20F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(239, 126);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(340, 35);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Configuracion de Usuario";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("DM Sans", 14F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(12, 187);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(193, 25);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Correo Electronico:";
+            // 
+            // correoUser
+            // 
+            this.correoUser.AutoSize = true;
+            this.correoUser.Font = new System.Drawing.Font("DM Sans", 14F);
+            this.correoUser.ForeColor = System.Drawing.Color.White;
+            this.correoUser.Location = new System.Drawing.Point(12, 212);
+            this.correoUser.Name = "correoUser";
+            this.correoUser.Size = new System.Drawing.Size(0, 25);
+            this.correoUser.TabIndex = 31;
+            // 
+            // nameUser
+            // 
+            this.nameUser.AutoSize = true;
+            this.nameUser.Font = new System.Drawing.Font("DM Sans", 14F);
+            this.nameUser.ForeColor = System.Drawing.Color.White;
+            this.nameUser.Location = new System.Drawing.Point(12, 280);
+            this.nameUser.Name = "nameUser";
+            this.nameUser.Size = new System.Drawing.Size(0, 25);
+            this.nameUser.TabIndex = 34;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("DM Sans", 14F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(12, 255);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(196, 25);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Nombre de Usuario:";
             // 
             // User
             // 
@@ -208,6 +266,12 @@ namespace OMA.FORMS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 547);
+            this.Controls.Add(this.nameUser);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.correoUser);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "User";
@@ -215,6 +279,7 @@ namespace OMA.FORMS
             this.header.ResumeLayout(false);
             this.header.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -230,5 +295,10 @@ namespace OMA.FORMS
         private System.Windows.Forms.Button regulation;
         private System.Windows.Forms.Button shop;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label correoUser;
+        private System.Windows.Forms.Label nameUser;
+        private System.Windows.Forms.Label label5;
     }
 }

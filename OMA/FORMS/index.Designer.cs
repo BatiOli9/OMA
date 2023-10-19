@@ -281,6 +281,7 @@ namespace OMA.FORMS
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Index";
             this.Text = "Index";
+            this.Load += new System.EventHandler(this.Index_Load);
             this.header.ResumeLayout(false);
             this.header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
