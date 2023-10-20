@@ -16,7 +16,6 @@ namespace OMA.FORMS
         public Register()
         {
             InitializeComponent();
-
             tbPass.PasswordChar = '*';
             tbPassConf.PasswordChar = '*';
         }
@@ -28,10 +27,13 @@ namespace OMA.FORMS
             this.Hide();
         }
 
+        int ultimoNumeroId;
+        int ultimaFila;
+
         private void button1_Click(object sender, EventArgs e)
         {
 
-            Conexion c = new Conexion(); ;
+            Conexion c = new Conexion();
 
             if (tbUser.Text == "" || tbPass.Text == "" || tbMail.Text == "" || tbPassConf.Text == "")
             {
@@ -45,14 +47,33 @@ namespace OMA.FORMS
             {
                 MessageBox.Show("La contraseña debe tener al menos 8 caracteres.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (tbPass != tbPassConf)
+            else if (tbPass.Text != tbPassConf.Text)
             {
                 MessageBox.Show("Las contraseñas no coinciden", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MySqlCommand command = new MySqlCommand("INSERT INTO `users`(`mail`, `password`, `username`, `admin`) VALUES (@mail, @pass, @user, @admin)", c.getConexion());
+                MySqlCommand idComand = new MySqlCommand("SELECT MAX(`id`) FROM `users`", c.getConexion());
+                object lastId = idComand.ExecuteScalar();
+                if (lastId != DBNull.Value)
+                {
+                    ultimoNumeroId = Convert.ToInt32(lastId);
+                }
 
+                MySqlCommand rowComand = new MySqlCommand("SELECT COUNT(*) FROM `users`");
+                object lastRow = rowComand.ExecuteScalar();
+                if (lastRow != DBNull.Value)
+                {
+                    ultimaFila = Convert.ToInt32(lastRow);
+                }
+
+                int id = ultimoNumeroId + 1;
+
+                int row = ultimaFila + 1;
+
+                MySqlCommand command = new MySqlCommand("INSERT INTO `users`(`id`, `mail`, `password`, `username`, `admin`) VALUES (@mail, @pass, @user, @admin)", c.getConexion());
+
+                command.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
                 command.Parameters.Add("@mail", MySqlDbType.VarChar).Value = tbMail.Text;
                 command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = tbPass.Text;
                 command.Parameters.Add("@user", MySqlDbType.VarChar).Value = tbUser.Text;
@@ -60,7 +81,7 @@ namespace OMA.FORMS
 
                 c.getConexion();
 
-                if (command.ExecuteNonQuery() == 1)
+                if (command.ExecuteNonQuery() == row)
                 {
                     MessageBox.Show("Cuenta creada correctamente. Iniciar Sesion.");
                 }
@@ -71,6 +92,7 @@ namespace OMA.FORMS
 
                 c.closeConexion();
             }
+            
         }
 
         private void iconButton1_Click(object sender, EventArgs e)

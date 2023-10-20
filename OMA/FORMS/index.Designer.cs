@@ -43,6 +43,7 @@ namespace OMA.FORMS
             this.shopButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnControl = new System.Windows.Forms.Button();
             this.header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +51,7 @@ namespace OMA.FORMS
             // header
             // 
             this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(195)))), ((int)(((byte)(255)))));
+            this.header.Controls.Add(this.btnControl);
             this.header.Controls.Add(this.adminLbl);
             this.header.Controls.Add(this.iconButton2);
             this.header.Controls.Add(this.iconButton1);
@@ -266,6 +268,22 @@ namespace OMA.FORMS
             this.label1.TabIndex = 27;
             this.label1.Text = "Opciones Rapidas:";
             // 
+            // btnControl
+            // 
+            this.btnControl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnControl.BackColor = System.Drawing.Color.Transparent;
+            this.btnControl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnControl.FlatAppearance.BorderSize = 0;
+            this.btnControl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnControl.Font = new System.Drawing.Font("DM Sans", 10F, System.Drawing.FontStyle.Bold);
+            this.btnControl.Location = new System.Drawing.Point(165, 3);
+            this.btnControl.Name = "btnControl";
+            this.btnControl.Size = new System.Drawing.Size(196, 33);
+            this.btnControl.TabIndex = 30;
+            this.btnControl.Text = "Accede al panel de control";
+            this.btnControl.UseVisualStyleBackColor = false;
+            // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,5 +324,6 @@ namespace OMA.FORMS
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label adminLbl;
+        private System.Windows.Forms.Button btnControl;
     }
 }

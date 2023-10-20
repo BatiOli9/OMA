@@ -87,7 +87,23 @@ namespace OMA.FORMS
 
         private void Productos_Load(object sender, EventArgs e)
         {
+            if (Program.admin == "yes")
+            {
+                btnControl.Show();
+                adminLbl.Show();
+            }
+            else
+            {
+                btnControl.Hide();
+                adminLbl.Hide();
+            }
+        }
 
+        private void account_Click(object sender, EventArgs e)
+        {
+            User ventana = new User();
+            ventana.Show();
+            this.Hide();
         }
     }
 }

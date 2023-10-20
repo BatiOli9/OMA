@@ -55,6 +55,8 @@ namespace OMA.FORMS
             this.regulation = new System.Windows.Forms.Button();
             this.shop = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnControl = new System.Windows.Forms.Button();
+            this.adminLbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -259,7 +261,9 @@ namespace OMA.FORMS
             // header
             // 
             this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(195)))), ((int)(((byte)(255)))));
+            this.header.Controls.Add(this.btnControl);
             this.header.Controls.Add(this.iconButton2);
+            this.header.Controls.Add(this.adminLbl);
             this.header.Controls.Add(this.iconButton1);
             this.header.Controls.Add(this.settings);
             this.header.Controls.Add(this.account);
@@ -341,6 +345,7 @@ namespace OMA.FORMS
             this.account.TabIndex = 10;
             this.account.Text = "Mi Cuenta";
             this.account.UseVisualStyleBackColor = false;
+            this.account.Click += new System.EventHandler(this.account_Click);
             // 
             // OMA
             // 
@@ -405,6 +410,32 @@ namespace OMA.FORMS
             this.label7.TabIndex = 16;
             this.label7.Text = "Tienda OMA";
             // 
+            // btnControl
+            // 
+            this.btnControl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnControl.BackColor = System.Drawing.Color.Transparent;
+            this.btnControl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnControl.FlatAppearance.BorderSize = 0;
+            this.btnControl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnControl.Font = new System.Drawing.Font("DM Sans", 10F, System.Drawing.FontStyle.Bold);
+            this.btnControl.Location = new System.Drawing.Point(165, 3);
+            this.btnControl.Name = "btnControl";
+            this.btnControl.Size = new System.Drawing.Size(196, 33);
+            this.btnControl.TabIndex = 32;
+            this.btnControl.Text = "Accede al panel de control";
+            this.btnControl.UseVisualStyleBackColor = false;
+            // 
+            // adminLbl
+            // 
+            this.adminLbl.AutoSize = true;
+            this.adminLbl.Font = new System.Drawing.Font("DM Sans", 10F);
+            this.adminLbl.Location = new System.Drawing.Point(9, 9);
+            this.adminLbl.Name = "adminLbl";
+            this.adminLbl.Size = new System.Drawing.Size(152, 18);
+            this.adminLbl.TabIndex = 31;
+            this.adminLbl.Text = "Usuario Administrador";
+            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -433,6 +464,7 @@ namespace OMA.FORMS
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.header.ResumeLayout(false);
+            this.header.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -465,5 +497,7 @@ namespace OMA.FORMS
         private System.Windows.Forms.Button regulation;
         private System.Windows.Forms.Button shop;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnControl;
+        private System.Windows.Forms.Label adminLbl;
     }
 }

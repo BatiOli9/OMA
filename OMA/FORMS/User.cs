@@ -21,13 +21,21 @@ namespace OMA.FORMS
             string mail = Program.mail;
             string admin = Program.admin;
 
-            MessageBox.Show(Program.mail);
-
             correoUser.Text = mail;
             nameUser.Text = username;
         }
         private void User_Load(object sender, EventArgs e)
         {
+            if (Program.admin == "yes")
+            {
+                adminLbl.Show();
+                btnControl.Show();
+            }
+            else
+            {
+                btnControl.Show();
+                adminLbl.Hide();
+            }
         }
 
         private void OMA_Click(object sender, EventArgs e)
@@ -66,6 +74,31 @@ namespace OMA.FORMS
         private void iconButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ChangePass ventana = new ChangePass();
+            ventana.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ChangeUser ventana = new ChangeUser();
+            ventana.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            User ventana = new User();
+            ventana.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ChangeMail ventana = new ChangeMail();
+            ventana.Show();
         }
     }
 }

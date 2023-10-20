@@ -118,6 +118,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>databaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\ChangeMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\ChangeMail.Designer.cs">
+      <DependentUpon>ChangeMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\ChangePass.Designer.cs">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\ChangeUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\ChangeUser.Designer.cs">
+      <DependentUpon>ChangeUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\Ecommerce.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +184,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FORMS\ChangeMail.resx">
+      <DependentUpon>ChangeMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\ChangeUser.resx">
+      <DependentUpon>ChangeUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FORMS\Ecommerce.resx">
       <DependentUpon>Ecommerce.cs</DependentUpon>
     </EmbeddedResource>

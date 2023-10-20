@@ -94,7 +94,16 @@ namespace OMA.FORMS
 
         private void Regulacion_Load(object sender, EventArgs e)
         {
-
+            if (Program.admin == "yes")
+            {
+                btnControl.Show();
+                adminLbl.Show();
+            }
+            else
+            {
+                btnControl.Hide();
+                adminLbl.Hide();
+            }
         }
 
         private void settings_Click(object sender, EventArgs e)

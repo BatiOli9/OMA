@@ -23,10 +23,12 @@ namespace OMA.FORMS
             {
                 MessageBox.Show("Bienvenido Administrador");
                 adminLbl.Text = "Usuario Administrador";
+                btnControl.Show();
             }
             else
             {
                 adminLbl.Text = "";
+                btnControl.Hide();
             }
         }
 
