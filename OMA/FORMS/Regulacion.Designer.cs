@@ -40,6 +40,8 @@ namespace OMA.FORMS
             this.rpmBar = new System.Windows.Forms.TrackBar();
             this.arduino = new System.IO.Ports.SerialPort(this.components);
             this.header = new System.Windows.Forms.Panel();
+            this.btnControl = new System.Windows.Forms.Button();
+            this.adminLbl = new System.Windows.Forms.Label();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.settings = new System.Windows.Forms.Button();
@@ -47,8 +49,6 @@ namespace OMA.FORMS
             this.OMA = new System.Windows.Forms.Button();
             this.regulation = new System.Windows.Forms.Button();
             this.shop = new System.Windows.Forms.Button();
-            this.btnControl = new System.Windows.Forms.Button();
-            this.adminLbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rpmBar)).BeginInit();
@@ -161,6 +161,32 @@ namespace OMA.FORMS
             this.header.Size = new System.Drawing.Size(800, 118);
             this.header.TabIndex = 17;
             // 
+            // btnControl
+            // 
+            this.btnControl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnControl.BackColor = System.Drawing.Color.Transparent;
+            this.btnControl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnControl.FlatAppearance.BorderSize = 0;
+            this.btnControl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnControl.Font = new System.Drawing.Font("DM Sans", 10F, System.Drawing.FontStyle.Bold);
+            this.btnControl.Location = new System.Drawing.Point(165, 4);
+            this.btnControl.Name = "btnControl";
+            this.btnControl.Size = new System.Drawing.Size(196, 33);
+            this.btnControl.TabIndex = 32;
+            this.btnControl.Text = "Accede al panel de control";
+            this.btnControl.UseVisualStyleBackColor = false;
+            // 
+            // adminLbl
+            // 
+            this.adminLbl.AutoSize = true;
+            this.adminLbl.Font = new System.Drawing.Font("DM Sans", 10F);
+            this.adminLbl.Location = new System.Drawing.Point(9, 10);
+            this.adminLbl.Name = "adminLbl";
+            this.adminLbl.Size = new System.Drawing.Size(152, 18);
+            this.adminLbl.TabIndex = 31;
+            this.adminLbl.Text = "Usuario Administrador";
+            // 
             // iconButton2
             // 
             this.iconButton2.BackColor = System.Drawing.Color.Transparent;
@@ -208,12 +234,13 @@ namespace OMA.FORMS
             this.settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settings.Font = new System.Drawing.Font("DM Sans", 14F);
-            this.settings.Location = new System.Drawing.Point(515, 51);
+            this.settings.Location = new System.Drawing.Point(639, 54);
             this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(125, 31);
+            this.settings.Size = new System.Drawing.Size(150, 31);
             this.settings.TabIndex = 11;
-            this.settings.Text = "Adquirir";
+            this.settings.Text = "Cerrar Sesion";
             this.settings.UseVisualStyleBackColor = false;
+            this.settings.Click += new System.EventHandler(this.settings_Click_1);
             // 
             // account
             // 
@@ -224,7 +251,7 @@ namespace OMA.FORMS
             this.account.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.account.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.account.Font = new System.Drawing.Font("DM Sans", 14F);
-            this.account.Location = new System.Drawing.Point(646, 50);
+            this.account.Location = new System.Drawing.Point(491, 51);
             this.account.Name = "account";
             this.account.Size = new System.Drawing.Size(129, 38);
             this.account.TabIndex = 10;
@@ -282,32 +309,6 @@ namespace OMA.FORMS
             this.shop.Text = "Tienda";
             this.shop.UseVisualStyleBackColor = false;
             this.shop.Click += new System.EventHandler(this.shop_Click_1);
-            // 
-            // btnControl
-            // 
-            this.btnControl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnControl.BackColor = System.Drawing.Color.Transparent;
-            this.btnControl.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnControl.FlatAppearance.BorderSize = 0;
-            this.btnControl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnControl.Font = new System.Drawing.Font("DM Sans", 10F, System.Drawing.FontStyle.Bold);
-            this.btnControl.Location = new System.Drawing.Point(165, 4);
-            this.btnControl.Name = "btnControl";
-            this.btnControl.Size = new System.Drawing.Size(196, 33);
-            this.btnControl.TabIndex = 32;
-            this.btnControl.Text = "Accede al panel de control";
-            this.btnControl.UseVisualStyleBackColor = false;
-            // 
-            // adminLbl
-            // 
-            this.adminLbl.AutoSize = true;
-            this.adminLbl.Font = new System.Drawing.Font("DM Sans", 10F);
-            this.adminLbl.Location = new System.Drawing.Point(9, 10);
-            this.adminLbl.Name = "adminLbl";
-            this.adminLbl.Size = new System.Drawing.Size(152, 18);
-            this.adminLbl.TabIndex = 31;
-            this.adminLbl.Text = "Usuario Administrador";
             // 
             // Regulacion
             // 

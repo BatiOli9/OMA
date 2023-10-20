@@ -60,7 +60,7 @@ namespace OMA.FORMS
                     ultimoNumeroId = Convert.ToInt32(lastId);
                 }
 
-                MySqlCommand rowComand = new MySqlCommand("SELECT COUNT(*) FROM `users`");
+                MySqlCommand rowComand = new MySqlCommand("SELECT COUNT(*) FROM `users`", c.getConexion());
                 object lastRow = rowComand.ExecuteScalar();
                 if (lastRow != DBNull.Value)
                 {
@@ -71,7 +71,7 @@ namespace OMA.FORMS
 
                 int row = ultimaFila + 1;
 
-                MySqlCommand command = new MySqlCommand("INSERT INTO `users`(`id`, `mail`, `password`, `username`, `admin`) VALUES (@mail, @pass, @user, @admin)", c.getConexion());
+                MySqlCommand command = new MySqlCommand("INSERT INTO `users`(`id`, `mail`, `password`, `username`, `admin`) VALUES (@id, @mail, @pass, @user, @admin)", c.getConexion());
 
                 command.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
                 command.Parameters.Add("@mail", MySqlDbType.VarChar).Value = tbMail.Text;
@@ -81,7 +81,7 @@ namespace OMA.FORMS
 
                 c.getConexion();
 
-                if (command.ExecuteNonQuery() == row)
+                if (command.ExecuteNonQuery() == 1)
                 {
                     MessageBox.Show("Cuenta creada correctamente. Iniciar Sesion.");
                 }

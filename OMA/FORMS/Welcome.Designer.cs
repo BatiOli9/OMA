@@ -34,9 +34,6 @@ namespace OMA.FORMS
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.mailTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -113,34 +110,6 @@ namespace OMA.FORMS
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape2,
-            this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(708, 347);
-            this.shapeContainer1.TabIndex = 10;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape2
-            // 
-            this.lineShape2.Name = "";
-            this.lineShape2.X1 = 670;
-            this.lineShape2.X2 = 333;
-            this.lineShape2.Y1 = 336;
-            this.lineShape2.Y2 = 336;
-            // 
-            // lineShape1
-            // 
-            this.lineShape1.Name = "";
-            this.lineShape1.X1 = 474;
-            this.lineShape1.X2 = 399;
-            this.lineShape1.Y1 = 221;
-            this.lineShape1.Y2 = 198;
-            // 
             // mailTb
             // 
             this.mailTb.BackColor = System.Drawing.Color.Black;
@@ -156,7 +125,7 @@ namespace OMA.FORMS
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("DM Sans", 13F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(334, 88);
+            this.label2.Location = new System.Drawing.Point(334, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 24);
             this.label2.TabIndex = 13;
@@ -167,7 +136,7 @@ namespace OMA.FORMS
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("DM Sans", 13F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(334, 170);
+            this.label3.Location = new System.Drawing.Point(334, 166);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 24);
             this.label3.TabIndex = 15;
@@ -256,7 +225,6 @@ namespace OMA.FORMS
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Welcome";
             this.Text = "Welcome";
@@ -274,9 +242,6 @@ namespace OMA.FORMS
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button4;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.TextBox mailTb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

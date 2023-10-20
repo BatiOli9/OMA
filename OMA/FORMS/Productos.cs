@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace OMA.FORMS
 {
@@ -16,6 +17,77 @@ namespace OMA.FORMS
         {
             InitializeComponent();
         }
+
+        public class Producto
+        {
+            public int id { get; set; }
+            public string nombre { get; set; }
+            public decimal precio { get; set; }
+            public string link { get; set; }
+            public string image { get; set; }
+        }
+
+        private void Productos_Load(object sender, EventArgs e)
+        {
+            // Items Admin
+            if (Program.admin == "yes")
+            {
+                btnControl.Show();
+                adminLbl.Show();
+            }
+            else
+            {
+                btnControl.Hide();
+                adminLbl.Hide();
+            }
+
+            // Carga de Productos
+            
+            // Extraccion de Productos
+            Conexion c = new Conexion();
+
+            List<Producto> productos = new List<Producto>();
+
+            c.getConexion();
+
+            MySqlCommand comandoProductos = new MySqlCommand("SELECT * FROM productos", c.getConexion());
+
+            MySqlDataReader resultados = comandoProductos.ExecuteReader();
+
+            while (resultados.Read())
+            {
+                Producto producto = new Producto();
+                producto.id = resultados.GetInt32(0);
+                producto.nombre = resultados.GetString(1);
+                producto.precio = resultados.GetDecimal(2);
+                producto.image = resultados.GetString(3);
+                productos.Add(producto);
+            }
+
+            c.closeConexion();
+
+            // Productos Puestos en la App
+            foreach(Producto producto in productos)
+            {
+                // Div
+                Panel panel = new Panel();
+                // Label Precio
+                Label precioLabel = new Label();
+                precioLabel.Text = producto.precio.ToString();
+                panel.Controls.Add(precioLabel);
+                // Label Nombre
+                Label nombreLabel = new Label();
+                nombreLabel.Text = producto.nombre;
+                panel.Controls.Add(nombreLabel);
+                // Foto
+                // PictureBox fotoPictureBox = new PictureBox();
+                // fotoPictureBox.Image = 
+                // panel.Controls.Add(fotoPictureBox);
+                // Añadir el panel al formulario
+                this.Controls.Add(panel);
+            }
+        }
+
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -79,29 +151,16 @@ namespace OMA.FORMS
             this.Close();
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            Ecommerce ventana = new Ecommerce();
-            ventana.Show();
-        }
-
-        private void Productos_Load(object sender, EventArgs e)
-        {
-            if (Program.admin == "yes")
-            {
-                btnControl.Show();
-                adminLbl.Show();
-            }
-            else
-            {
-                btnControl.Hide();
-                adminLbl.Hide();
-            }
-        }
-
         private void account_Click(object sender, EventArgs e)
         {
             User ventana = new User();
+            ventana.Show();
+            this.Hide();
+        }
+
+        private void settings_Click(object sender, EventArgs e)
+        {
+            Welcome ventana = new Welcome();
             ventana.Show();
             this.Hide();
         }

@@ -100,5 +100,12 @@ namespace OMA.FORMS
             ChangeMail ventana = new ChangeMail();
             ventana.Show();
         }
+
+        private void settings_Click(object sender, EventArgs e)
+        {
+            Welcome ventana = new Welcome();
+            ventana.Show();
+            this.Hide();
+        }
     }
 }

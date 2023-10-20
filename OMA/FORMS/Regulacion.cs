@@ -151,5 +151,12 @@ namespace OMA.FORMS
             ventana.Show();
             this.Hide();
         }
+
+        private void settings_Click_1(object sender, EventArgs e)
+        {
+            Welcome ventana = new Welcome();
+            ventana.Show();
+            this.Hide();
+        }
     }
 }

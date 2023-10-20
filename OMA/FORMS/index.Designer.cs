@@ -30,6 +30,7 @@ namespace OMA.FORMS
         private void InitializeComponent()
         {
             this.header = new System.Windows.Forms.Panel();
+            this.btnControl = new System.Windows.Forms.Button();
             this.adminLbl = new System.Windows.Forms.Label();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
@@ -43,7 +44,6 @@ namespace OMA.FORMS
             this.shopButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnControl = new System.Windows.Forms.Button();
             this.header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +65,22 @@ namespace OMA.FORMS
             this.header.Name = "header";
             this.header.Size = new System.Drawing.Size(800, 118);
             this.header.TabIndex = 1;
+            // 
+            // btnControl
+            // 
+            this.btnControl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnControl.BackColor = System.Drawing.Color.Transparent;
+            this.btnControl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnControl.FlatAppearance.BorderSize = 0;
+            this.btnControl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnControl.Font = new System.Drawing.Font("DM Sans", 10F, System.Drawing.FontStyle.Bold);
+            this.btnControl.Location = new System.Drawing.Point(165, 3);
+            this.btnControl.Name = "btnControl";
+            this.btnControl.Size = new System.Drawing.Size(196, 33);
+            this.btnControl.TabIndex = 30;
+            this.btnControl.Text = "Accede al panel de control";
+            this.btnControl.UseVisualStyleBackColor = false;
             // 
             // adminLbl
             // 
@@ -124,11 +140,11 @@ namespace OMA.FORMS
             this.settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settings.Font = new System.Drawing.Font("DM Sans", 14F);
-            this.settings.Location = new System.Drawing.Point(515, 51);
+            this.settings.Location = new System.Drawing.Point(639, 54);
             this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(125, 31);
+            this.settings.Size = new System.Drawing.Size(149, 31);
             this.settings.TabIndex = 11;
-            this.settings.Text = "Adquirir";
+            this.settings.Text = "Cerrar Sesion";
             this.settings.UseVisualStyleBackColor = false;
             // 
             // account
@@ -140,7 +156,7 @@ namespace OMA.FORMS
             this.account.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.account.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.account.Font = new System.Drawing.Font("DM Sans", 14F);
-            this.account.Location = new System.Drawing.Point(646, 50);
+            this.account.Location = new System.Drawing.Point(491, 51);
             this.account.Name = "account";
             this.account.Size = new System.Drawing.Size(129, 38);
             this.account.TabIndex = 10;
@@ -267,22 +283,6 @@ namespace OMA.FORMS
             this.label1.Size = new System.Drawing.Size(185, 26);
             this.label1.TabIndex = 27;
             this.label1.Text = "Opciones Rapidas:";
-            // 
-            // btnControl
-            // 
-            this.btnControl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnControl.BackColor = System.Drawing.Color.Transparent;
-            this.btnControl.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnControl.FlatAppearance.BorderSize = 0;
-            this.btnControl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnControl.Font = new System.Drawing.Font("DM Sans", 10F, System.Drawing.FontStyle.Bold);
-            this.btnControl.Location = new System.Drawing.Point(165, 3);
-            this.btnControl.Name = "btnControl";
-            this.btnControl.Size = new System.Drawing.Size(196, 33);
-            this.btnControl.TabIndex = 30;
-            this.btnControl.Text = "Accede al panel de control";
-            this.btnControl.UseVisualStyleBackColor = false;
             // 
             // Index
             // 
