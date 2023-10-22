@@ -176,6 +176,7 @@ namespace OMA.FORMS
             this.btnControl.TabIndex = 32;
             this.btnControl.Text = "Accede al panel de control";
             this.btnControl.UseVisualStyleBackColor = false;
+            this.btnControl.Click += new System.EventHandler(this.btnControl_Click);
             // 
             // adminLbl
             // 

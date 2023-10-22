@@ -118,6 +118,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>databaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\ChangeMail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FORMS\AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FORMS\ChangeMail.resx">
       <DependentUpon>ChangeMail.cs</DependentUpon>
     </EmbeddedResource>

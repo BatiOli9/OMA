@@ -1,7 +1,6 @@
-﻿
-namespace OMA.FORMS
+﻿namespace OMA.FORMS
 {
-    partial class Productos
+    partial class AdminPanel
     {
         /// <summary>
         /// Required designer variable.
@@ -31,15 +30,22 @@ namespace OMA.FORMS
         {
             this.header = new System.Windows.Forms.Panel();
             this.btnControl = new System.Windows.Forms.Button();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.adminLbl = new System.Windows.Forms.Label();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.settings = new System.Windows.Forms.Button();
             this.account = new System.Windows.Forms.Button();
             this.OMA = new System.Windows.Forms.Button();
             this.regulation = new System.Windows.Forms.Button();
             this.shop = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.header.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,8 +53,8 @@ namespace OMA.FORMS
             // 
             this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(195)))), ((int)(((byte)(255)))));
             this.header.Controls.Add(this.btnControl);
-            this.header.Controls.Add(this.iconButton2);
             this.header.Controls.Add(this.adminLbl);
+            this.header.Controls.Add(this.iconButton2);
             this.header.Controls.Add(this.iconButton1);
             this.header.Controls.Add(this.settings);
             this.header.Controls.Add(this.account);
@@ -59,7 +65,7 @@ namespace OMA.FORMS
             this.header.Location = new System.Drawing.Point(0, 0);
             this.header.Name = "header";
             this.header.Size = new System.Drawing.Size(800, 118);
-            this.header.TabIndex = 15;
+            this.header.TabIndex = 3;
             // 
             // btnControl
             // 
@@ -77,6 +83,16 @@ namespace OMA.FORMS
             this.btnControl.Text = "Accede al panel de control";
             this.btnControl.UseVisualStyleBackColor = false;
             this.btnControl.Click += new System.EventHandler(this.btnControl_Click);
+            // 
+            // adminLbl
+            // 
+            this.adminLbl.AutoSize = true;
+            this.adminLbl.Font = new System.Drawing.Font("DM Sans", 10F);
+            this.adminLbl.Location = new System.Drawing.Point(9, 9);
+            this.adminLbl.Name = "adminLbl";
+            this.adminLbl.Size = new System.Drawing.Size(152, 18);
+            this.adminLbl.TabIndex = 31;
+            this.adminLbl.Text = "Usuario Administrador";
             // 
             // iconButton2
             // 
@@ -96,16 +112,6 @@ namespace OMA.FORMS
             this.iconButton2.TabIndex = 26;
             this.iconButton2.UseVisualStyleBackColor = false;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
-            // 
-            // adminLbl
-            // 
-            this.adminLbl.AutoSize = true;
-            this.adminLbl.Font = new System.Drawing.Font("DM Sans", 10F);
-            this.adminLbl.Location = new System.Drawing.Point(9, 9);
-            this.adminLbl.Name = "adminLbl";
-            this.adminLbl.Size = new System.Drawing.Size(152, 18);
-            this.adminLbl.TabIndex = 31;
-            this.adminLbl.Text = "Usuario Administrador";
             // 
             // iconButton1
             // 
@@ -137,7 +143,7 @@ namespace OMA.FORMS
             this.settings.Font = new System.Drawing.Font("DM Sans", 14F);
             this.settings.Location = new System.Drawing.Point(639, 54);
             this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(143, 31);
+            this.settings.Size = new System.Drawing.Size(153, 31);
             this.settings.TabIndex = 11;
             this.settings.Text = "Cerrar Sesion";
             this.settings.UseVisualStyleBackColor = false;
@@ -212,30 +218,142 @@ namespace OMA.FORMS
             this.shop.UseVisualStyleBackColor = false;
             this.shop.Click += new System.EventHandler(this.shop_Click);
             // 
-            // label7
+            // label1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("DM Sans", 20F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(323, 132);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(167, 35);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Tienda OMA";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("DM Sans", 17F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(58, 132);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(262, 30);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Gestion de Productos:";
             // 
-            // Productos
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("DM Sans", 17F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(509, 132);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(242, 30);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Gestion de Usuarios:";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("DM Sans", 14F);
+            this.button1.Location = new System.Drawing.Point(32, 179);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(310, 35);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "Modificar Productos";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("DM Sans", 14F);
+            this.button2.Location = new System.Drawing.Point(32, 244);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(310, 35);
+            this.button2.TabIndex = 35;
+            this.button2.Text = "Crear Productos";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("DM Sans", 14F);
+            this.button3.Location = new System.Drawing.Point(32, 308);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(310, 35);
+            this.button3.TabIndex = 36;
+            this.button3.Text = "Eliminar Productos";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("DM Sans", 14F);
+            this.button4.Location = new System.Drawing.Point(467, 308);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(310, 35);
+            this.button4.TabIndex = 39;
+            this.button4.Text = "Eliminar Usuarios";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("DM Sans", 14F);
+            this.button5.Location = new System.Drawing.Point(467, 244);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(310, 35);
+            this.button5.TabIndex = 38;
+            this.button5.Text = "Crear Usuarios";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("DM Sans", 14F);
+            this.button6.Location = new System.Drawing.Point(467, 179);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(310, 35);
+            this.button6.TabIndex = 37;
+            this.button6.Text = "Modificar Usuarios";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(800, 492);
-            this.Controls.Add(this.label7);
+            this.ClientSize = new System.Drawing.Size(800, 384);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.header);
-            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Productos";
-            this.Text = "/";
-            this.Load += new System.EventHandler(this.Productos_Load);
+            this.Name = "AdminPanel";
+            this.Text = "AdminPanel";
             this.header.ResumeLayout(false);
             this.header.PerformLayout();
             this.ResumeLayout(false);
@@ -244,7 +362,10 @@ namespace OMA.FORMS
         }
 
         #endregion
+
         private System.Windows.Forms.Panel header;
+        private System.Windows.Forms.Button btnControl;
+        private System.Windows.Forms.Label adminLbl;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Button settings;
@@ -252,8 +373,13 @@ namespace OMA.FORMS
         private System.Windows.Forms.Button OMA;
         private System.Windows.Forms.Button regulation;
         private System.Windows.Forms.Button shop;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnControl;
-        private System.Windows.Forms.Label adminLbl;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }

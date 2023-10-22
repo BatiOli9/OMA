@@ -96,5 +96,12 @@ namespace OMA.FORMS
             ventana.Show();
             this.Hide();
         }
+
+        private void btnControl_Click(object sender, EventArgs e)
+        {
+            AdminPanel panel = new AdminPanel();
+            panel.Show();
+            this.Hide();
+        }
     }
 }

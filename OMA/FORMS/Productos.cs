@@ -20,11 +20,11 @@ namespace OMA.FORMS
 
         public class Producto
         {
-            public int id { get; set; }
-            public string nombre { get; set; }
-            public decimal precio { get; set; }
-            public string link { get; set; }
-            public string image { get; set; }
+            public int id;
+            public string nombre;
+            public decimal precio;
+            public string link;
+            public string image;
         }
 
         private void Productos_Load(object sender, EventArgs e)
@@ -162,6 +162,13 @@ namespace OMA.FORMS
         {
             Welcome ventana = new Welcome();
             ventana.Show();
+            this.Hide();
+        }
+
+        private void btnControl_Click(object sender, EventArgs e)
+        {
+            AdminPanel panel = new AdminPanel();
+            panel.Show();
             this.Hide();
         }
     }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 using System.Data.OleDb;
 using MySql.Data.MySqlClient;
 namespace OMA.FORMS
@@ -50,6 +51,10 @@ namespace OMA.FORMS
             else if (tbPass.Text != tbPassConf.Text)
             {
                 MessageBox.Show("Las contraseñas no coinciden", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (!Regex.IsMatch(tbPass.Text, @"(?=.*[A-Z])(?=.*\d)") || !Regex.IsMatch(tbPassConf.Text, @"(?=.*[A-Z])(?=.*\d)"))
+            {
+                MessageBox.Show("La contraseña debe tener al menos un número y una letra mayúscula");
             }
             else
             {

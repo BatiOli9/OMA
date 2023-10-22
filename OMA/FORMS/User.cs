@@ -23,18 +23,18 @@ namespace OMA.FORMS
 
             correoUser.Text = mail;
             nameUser.Text = username;
-        }
-        private void User_Load(object sender, EventArgs e)
-        {
+
             if (Program.admin == "yes")
             {
-                adminLbl.Show();
+                adminLbl.Text = "Usuario Administrador";
                 btnControl.Show();
+                adminPanel.Show();
             }
             else
             {
-                btnControl.Show();
-                adminLbl.Hide();
+                adminPanel.Hide();
+                adminLbl.Text = "";
+                btnControl.Hide();
             }
         }
 
@@ -105,6 +105,20 @@ namespace OMA.FORMS
         {
             Welcome ventana = new Welcome();
             ventana.Show();
+            this.Hide();
+        }
+
+        private void btnControl_Click(object sender, EventArgs e)
+        {
+            AdminPanel panel = new AdminPanel();
+            panel.Show();
+            this.Hide();
+        }
+
+        private void adminPanel_Click(object sender, EventArgs e)
+        {
+            AdminPanel panel = new AdminPanel();
+            panel.Show();
             this.Hide();
         }
     }
