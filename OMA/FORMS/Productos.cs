@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Threading;
 
 namespace OMA.FORMS
 {
@@ -61,6 +62,7 @@ namespace OMA.FORMS
                 producto.nombre = resultados.GetString(1);
                 producto.precio = resultados.GetDecimal(2);
                 producto.image = resultados.GetString(3);
+                producto.link = resultados.GetString(4);
                 productos.Add(producto);
             }
 
@@ -69,22 +71,17 @@ namespace OMA.FORMS
             // Productos Puestos en la App
             foreach(Producto producto in productos)
             {
-                // Div
-                Panel panel = new Panel();
-                // Label Precio
-                Label precioLabel = new Label();
-                precioLabel.Text = producto.precio.ToString();
-                panel.Controls.Add(precioLabel);
-                // Label Nombre
-                Label nombreLabel = new Label();
-                nombreLabel.Text = producto.nombre;
-                panel.Controls.Add(nombreLabel);
-                // Foto
-                // PictureBox fotoPictureBox = new PictureBox();
-                // fotoPictureBox.Image = 
-                // panel.Controls.Add(fotoPictureBox);
-                // Añadir el panel al formulario
-                this.Controls.Add(panel);
+                string precioConvertido = Convert.ToString(producto.precio);
+                ProductControl pc = new ProductControl();
+
+                pc.Nombre = producto.nombre;
+                pc.Precio = precioConvertido;
+                pc.Foto = producto.image;
+
+
+                flowLayoutPanel1.Controls.Add(pc);
+
+                Thread.Sleep(10);
             }
         }
 

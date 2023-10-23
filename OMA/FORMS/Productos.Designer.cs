@@ -40,6 +40,7 @@ namespace OMA.FORMS
             this.regulation = new System.Windows.Forms.Button();
             this.shop = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.header.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -223,12 +224,20 @@ namespace OMA.FORMS
             this.label7.TabIndex = 16;
             this.label7.Text = "Tienda OMA";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(50, 170);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(700, 320);
+            this.flowLayoutPanel1.TabIndex = 17;
+            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 492);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.header);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -255,5 +264,6 @@ namespace OMA.FORMS
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnControl;
         private System.Windows.Forms.Label adminLbl;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

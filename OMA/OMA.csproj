@@ -149,6 +149,12 @@
     <Compile Include="FORMS\Index.Designer.cs">
       <DependentUpon>Index.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\ProductControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FORMS\ProductControl.Designer.cs">
+      <DependentUpon>ProductControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\Productos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\ProductControl.resx">
+      <DependentUpon>ProductControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\Productos.resx">
       <DependentUpon>Productos.cs</DependentUpon>
