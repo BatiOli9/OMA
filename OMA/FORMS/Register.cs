@@ -89,6 +89,10 @@ namespace OMA.FORMS
                 if (command.ExecuteNonQuery() == 1)
                 {
                     MessageBox.Show("Cuenta creada correctamente. Iniciar Sesion.","Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    Welcome ventana = new Welcome();
+                    ventana.Show();
+                    this.Hide();
                 }
                 else
                 {

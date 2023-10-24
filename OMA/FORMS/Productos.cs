@@ -75,7 +75,7 @@ namespace OMA.FORMS
                 ProductControl pc = new ProductControl();
 
                 pc.Nombre = producto.nombre;
-                pc.Precio = precioConvertido;
+                pc.Precio = "$" + precioConvertido;
                 pc.Foto = producto.image;
 
 

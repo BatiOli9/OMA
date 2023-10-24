@@ -29,7 +29,10 @@ namespace OMA.FORMS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User));
             this.header = new System.Windows.Forms.Panel();
+            this.btnControl = new System.Windows.Forms.Button();
+            this.adminLbl = new System.Windows.Forms.Label();
             this.settings = new System.Windows.Forms.Button();
             this.account = new System.Windows.Forms.Button();
             this.regulation = new System.Windows.Forms.Button();
@@ -47,8 +50,6 @@ namespace OMA.FORMS
             this.mySqlCommand1 = new MySqlConnector.MySqlCommand();
             this.button5 = new System.Windows.Forms.Button();
             this.adminPanel = new System.Windows.Forms.Button();
-            this.btnControl = new System.Windows.Forms.Button();
-            this.adminLbl = new System.Windows.Forms.Label();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.OMA = new System.Windows.Forms.Button();
@@ -72,6 +73,33 @@ namespace OMA.FORMS
             this.header.Name = "header";
             this.header.Size = new System.Drawing.Size(800, 118);
             this.header.TabIndex = 2;
+            // 
+            // btnControl
+            // 
+            this.btnControl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnControl.BackColor = System.Drawing.Color.Transparent;
+            this.btnControl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnControl.FlatAppearance.BorderSize = 0;
+            this.btnControl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnControl.Font = new System.Drawing.Font("DM Sans", 10F, System.Drawing.FontStyle.Bold);
+            this.btnControl.Location = new System.Drawing.Point(165, 3);
+            this.btnControl.Name = "btnControl";
+            this.btnControl.Size = new System.Drawing.Size(196, 33);
+            this.btnControl.TabIndex = 32;
+            this.btnControl.Text = "Accede al panel de control";
+            this.btnControl.UseVisualStyleBackColor = false;
+            this.btnControl.Click += new System.EventHandler(this.btnControl_Click);
+            // 
+            // adminLbl
+            // 
+            this.adminLbl.AutoSize = true;
+            this.adminLbl.Font = new System.Drawing.Font("DM Sans", 10F);
+            this.adminLbl.Location = new System.Drawing.Point(9, 9);
+            this.adminLbl.Name = "adminLbl";
+            this.adminLbl.Size = new System.Drawing.Size(152, 18);
+            this.adminLbl.TabIndex = 31;
+            this.adminLbl.Text = "Usuario Administrador";
             // 
             // settings
             // 
@@ -263,6 +291,7 @@ namespace OMA.FORMS
             this.button4.TabIndex = 38;
             this.button4.Text = "Borrar Cuenta";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // mySqlCommand1
             // 
@@ -300,33 +329,6 @@ namespace OMA.FORMS
             this.adminPanel.Text = "Acceder al panel de Administrador";
             this.adminPanel.UseVisualStyleBackColor = false;
             this.adminPanel.Click += new System.EventHandler(this.adminPanel_Click);
-            // 
-            // btnControl
-            // 
-            this.btnControl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnControl.BackColor = System.Drawing.Color.Transparent;
-            this.btnControl.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnControl.FlatAppearance.BorderSize = 0;
-            this.btnControl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnControl.Font = new System.Drawing.Font("DM Sans", 10F, System.Drawing.FontStyle.Bold);
-            this.btnControl.Location = new System.Drawing.Point(165, 3);
-            this.btnControl.Name = "btnControl";
-            this.btnControl.Size = new System.Drawing.Size(196, 33);
-            this.btnControl.TabIndex = 32;
-            this.btnControl.Text = "Accede al panel de control";
-            this.btnControl.UseVisualStyleBackColor = false;
-            this.btnControl.Click += new System.EventHandler(this.btnControl_Click);
-            // 
-            // adminLbl
-            // 
-            this.adminLbl.AutoSize = true;
-            this.adminLbl.Font = new System.Drawing.Font("DM Sans", 10F);
-            this.adminLbl.Location = new System.Drawing.Point(9, 9);
-            this.adminLbl.Name = "adminLbl";
-            this.adminLbl.Size = new System.Drawing.Size(152, 18);
-            this.adminLbl.TabIndex = 31;
-            this.adminLbl.Text = "Usuario Administrador";
             // 
             // iconButton2
             // 
@@ -404,6 +406,7 @@ namespace OMA.FORMS
             this.Controls.Add(this.label1);
             this.Controls.Add(this.header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "User";
             this.Text = "User";
             this.header.ResumeLayout(false);

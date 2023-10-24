@@ -41,7 +41,9 @@ namespace OMA.FORMS
             this.shop = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.header.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // header
@@ -226,10 +228,18 @@ namespace OMA.FORMS
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Controls.Add(this.vScrollBar1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(50, 170);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(700, 320);
             this.flowLayoutPanel1.TabIndex = 17;
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(0, 0);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 313);
+            this.vScrollBar1.TabIndex = 18;
             // 
             // Productos
             // 
@@ -247,6 +257,7 @@ namespace OMA.FORMS
             this.Load += new System.EventHandler(this.Productos_Load);
             this.header.ResumeLayout(false);
             this.header.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,5 +276,6 @@ namespace OMA.FORMS
         private System.Windows.Forms.Button btnControl;
         private System.Windows.Forms.Label adminLbl;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }

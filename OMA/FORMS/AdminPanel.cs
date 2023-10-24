@@ -68,5 +68,16 @@ namespace OMA.FORMS
         {
             this.Close();
         }
+
+        private void AdminPanel_Load(object sender, EventArgs e)
+        {
+            if (Program.admin != "yes")
+            {
+                MessageBox.Show("No tenes jerarquia para entrar aca", "Error");
+                Index ventana = new Index();
+                ventana.Show();
+                this.Hide();
+            }
+        }
     }
 }

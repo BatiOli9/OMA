@@ -29,6 +29,7 @@ namespace OMA.FORMS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangeMail));
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.confPass = new System.Windows.Forms.TextBox();
@@ -136,6 +137,7 @@ namespace OMA.FORMS
             this.Controls.Add(this.label2);
             this.Controls.Add(this.oldPass);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChangeMail";
             this.Text = "ChangeMail";
             this.ResumeLayout(false);

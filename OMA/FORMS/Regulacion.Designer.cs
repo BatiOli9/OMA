@@ -30,6 +30,7 @@ namespace OMA.FORMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Regulacion));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.prender = new System.Windows.Forms.Button();
@@ -322,6 +323,7 @@ namespace OMA.FORMS
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Regulacion";
             this.Text = "Regulacion del dispositivo";
             this.Load += new System.EventHandler(this.Regulacion_Load);

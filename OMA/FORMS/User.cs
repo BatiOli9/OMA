@@ -121,5 +121,12 @@ namespace OMA.FORMS
             panel.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DeleteUser ventana = new DeleteUser();
+            ventana.Show();
+            this.Close();
+        }
     }
 }
