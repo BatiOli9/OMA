@@ -15,6 +15,11 @@ namespace OMA.FORMS
         public static string mail;
         public static string password;
         public static string admin;
+        public static string usernameMod;
+        public static string mailMod;
+        public static string passwordMod;
+        public static string adminMod;
+
 
         [STAThread]
         static void Main()

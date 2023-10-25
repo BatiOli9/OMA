@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using System.Threading;
 
 namespace OMA.FORMS
 {
@@ -59,6 +61,16 @@ namespace OMA.FORMS
             this.Hide();
         }
 
+        public class Usuario
+        {
+            public int id;
+            public string nombre;
+            public decimal mail;
+            public string username;
+            public string password;
+            public string admin;
+        }
+
         private void AdminUserControl_Load(object sender, EventArgs e)
         {
             if (Program.admin != "yes")
@@ -67,6 +79,52 @@ namespace OMA.FORMS
                 Index ventana = new Index();
                 ventana.Show();
                 this.Hide();
+            }
+            else
+            {
+                Conexion c = new Conexion();
+                List<Usuario> usuarios = new List<Usuario>();
+
+                c.getConexion();
+
+                MySqlCommand usuariosCommand = new MySqlCommand("SELECT * FROM users", c.getConexion());
+
+                MySqlDataReader resultados = usuariosCommand.ExecuteReader();
+
+                while (resultados.Read())
+                {
+                    Usuario usuario = new Usuario();
+                    usuario.id = resultados.GetInt32(0);
+                    // usuario.mail = resultados.GetString(1);
+                    usuario.password = resultados.GetString(2);
+                    usuario.username = resultados.GetString(3);
+                    usuario.admin = resultados.GetString(4);
+                    usuarios.Add(usuario);
+                }
+
+                foreach (Usuario usuario in usuarios)
+                {
+                    string adminProp;
+                    if (usuario.admin == "1")
+                    {
+                        adminProp = "Administrador";
+                    }
+                    else
+                    {
+                        adminProp = "Usuario";
+                    }
+
+                    UserAdminControl udc = new UserAdminControl();
+
+                    udc.Nombre = usuario.username;
+                    udc.Jerarquia = adminProp;
+                    udc.Contraseña = usuario.password;
+
+                    flowLayoutPanel1.Controls.Add(udc);
+
+                    Thread.Sleep(10);
+
+                }
             }
         }
 

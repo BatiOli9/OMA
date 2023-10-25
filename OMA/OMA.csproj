@@ -161,6 +161,12 @@
     <Compile Include="FORMS\Index.Designer.cs">
       <DependentUpon>Index.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\MOD_ADMIN\ModUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MOD_ADMIN\ModUsers.Designer.cs">
+      <DependentUpon>ModUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\ProductControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MOD_ADMIN\ModUsers.resx">
+      <DependentUpon>ModUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\ProductControl.resx">
       <DependentUpon>ProductControl.cs</DependentUpon>
