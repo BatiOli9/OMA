@@ -86,5 +86,17 @@ namespace OMA.FORMS
             ventana.Show();
             this.Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AdminUserControl ventana = new AdminUserControl();
+            ventana.Show();
+            this.Hide();
+        }
     }
 }

@@ -60,6 +60,7 @@ namespace OMA.FORMS.MOD_ADMIN
             this.button4.TabIndex = 55;
             this.button4.Text = "Cambiar Jerarquia";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -74,6 +75,7 @@ namespace OMA.FORMS.MOD_ADMIN
             this.button3.TabIndex = 54;
             this.button3.Text = "Cambiar Contraseña";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -88,6 +90,7 @@ namespace OMA.FORMS.MOD_ADMIN
             this.button2.TabIndex = 53;
             this.button2.Text = "Cambiar Mail";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -102,6 +105,7 @@ namespace OMA.FORMS.MOD_ADMIN
             this.button1.TabIndex = 52;
             this.button1.Text = "Cambiar Username";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ModUsers
             // 

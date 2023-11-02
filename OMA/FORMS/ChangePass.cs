@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Text.RegularExpressions;
 
 namespace OMA.FORMS
 {
@@ -28,6 +29,10 @@ namespace OMA.FORMS
             if (oldPass.Text == "" || newPass.Text == "" || confPass.Text == "" || oldPass.Text != Program.password || newPass.Text != confPass.Text)
             {
                 MessageBox.Show("Debes completar el formulario correctamente");
+            }
+            else if (!Regex.IsMatch(oldPass.Text, @"(?=.*[A-Z])(?=.*\d)"))
+            {
+                MessageBox.Show("La contraseña debe tener al menos un número y una letra mayúscula");
             }
             else
             {

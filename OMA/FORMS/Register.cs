@@ -52,6 +52,10 @@ namespace OMA.FORMS
             {
                 MessageBox.Show("Las contraseñas no coinciden", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if (!Regex.IsMatch(tbMail.Text, @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"))
+            {
+                MessageBox.Show("El correo electrónico ingresado no tiene la estructura correcta.");
+            }
             else if (!Regex.IsMatch(tbPass.Text, @"(?=.*[A-Z])(?=.*\d)") || !Regex.IsMatch(tbPassConf.Text, @"(?=.*[A-Z])(?=.*\d)"))
             {
                 MessageBox.Show("La contraseña debe tener al menos un número y una letra mayúscula");

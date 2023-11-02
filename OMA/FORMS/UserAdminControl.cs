@@ -51,11 +51,11 @@ namespace OMA.FORMS
         {
            if (jerarquia.Text == "Administrador")
             {
-                Program.admin = "1";
+                Program.adminMod = "1";
             }
            else
             {
-                Program.admin = "0";
+                Program.adminMod = "0";
             }
 
             Program.passwordMod = contraseña.Text;

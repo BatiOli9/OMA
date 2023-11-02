@@ -161,6 +161,30 @@
     <Compile Include="FORMS\Index.Designer.cs">
       <DependentUpon>Index.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\MOD_ADMIN\ModAdminMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MOD_ADMIN\ModAdminMail.Designer.cs">
+      <DependentUpon>ModAdminMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MOD_ADMIN\ModAdminPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MOD_ADMIN\ModAdminPassword.Designer.cs">
+      <DependentUpon>ModAdminPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MOD_ADMIN\ModAdminType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MOD_ADMIN\ModAdminType.Designer.cs">
+      <DependentUpon>ModAdminType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MOD_ADMIN\ModAdminUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MOD_ADMIN\ModAdminUser.Designer.cs">
+      <DependentUpon>ModAdminUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\MOD_ADMIN\ModUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +258,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MOD_ADMIN\ModAdminMail.resx">
+      <DependentUpon>ModAdminMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MOD_ADMIN\ModAdminPassword.resx">
+      <DependentUpon>ModAdminPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MOD_ADMIN\ModAdminType.resx">
+      <DependentUpon>ModAdminType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MOD_ADMIN\ModAdminUser.resx">
+      <DependentUpon>ModAdminUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\MOD_ADMIN\ModUsers.resx">
       <DependentUpon>ModUsers.cs</DependentUpon>
@@ -322,6 +358,8 @@
     <Content Include="database.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Group 8.png" />
+    <None Include="Resources\Group 8 %281%29.png" />
     <None Include="Resources\banner.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

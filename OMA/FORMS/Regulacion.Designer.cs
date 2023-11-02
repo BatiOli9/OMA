@@ -33,7 +33,6 @@ namespace OMA.FORMS
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Regulacion));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.prender = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.velocidad = new System.Windows.Forms.Label();
@@ -43,13 +42,14 @@ namespace OMA.FORMS
             this.header = new System.Windows.Forms.Panel();
             this.btnControl = new System.Windows.Forms.Button();
             this.adminLbl = new System.Windows.Forms.Label();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.settings = new System.Windows.Forms.Button();
             this.account = new System.Windows.Forms.Button();
-            this.OMA = new System.Windows.Forms.Button();
             this.regulation = new System.Windows.Forms.Button();
             this.shop = new System.Windows.Forms.Button();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.OMA = new System.Windows.Forms.Button();
+            this.prender = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rpmBar)).BeginInit();
@@ -76,21 +76,6 @@ namespace OMA.FORMS
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(438, 114);
             this.panel1.TabIndex = 13;
-            // 
-            // prender
-            // 
-            this.prender.BackColor = System.Drawing.Color.Lime;
-            this.prender.FlatAppearance.BorderSize = 0;
-            this.prender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.prender.Font = new System.Drawing.Font("DM Sans", 15F);
-            this.prender.ForeColor = System.Drawing.Color.Black;
-            this.prender.Location = new System.Drawing.Point(144, 49);
-            this.prender.Name = "prender";
-            this.prender.Size = new System.Drawing.Size(148, 51);
-            this.prender.TabIndex = 15;
-            this.prender.Text = "Encender";
-            this.prender.UseVisualStyleBackColor = false;
-            this.prender.Click += new System.EventHandler(this.prender_Click_1);
             // 
             // label2
             // 
@@ -189,6 +174,73 @@ namespace OMA.FORMS
             this.adminLbl.TabIndex = 31;
             this.adminLbl.Text = "Usuario Administrador";
             // 
+            // settings
+            // 
+            this.settings.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.settings.BackColor = System.Drawing.Color.Transparent;
+            this.settings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settings.FlatAppearance.BorderSize = 0;
+            this.settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settings.Font = new System.Drawing.Font("DM Sans", 14F);
+            this.settings.Location = new System.Drawing.Point(639, 54);
+            this.settings.Name = "settings";
+            this.settings.Size = new System.Drawing.Size(150, 31);
+            this.settings.TabIndex = 11;
+            this.settings.Text = "Cerrar Sesion";
+            this.settings.UseVisualStyleBackColor = false;
+            this.settings.Click += new System.EventHandler(this.settings_Click_1);
+            // 
+            // account
+            // 
+            this.account.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.account.BackColor = System.Drawing.Color.Transparent;
+            this.account.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.account.FlatAppearance.BorderSize = 0;
+            this.account.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.account.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.account.Font = new System.Drawing.Font("DM Sans", 14F);
+            this.account.Location = new System.Drawing.Point(491, 51);
+            this.account.Name = "account";
+            this.account.Size = new System.Drawing.Size(129, 38);
+            this.account.TabIndex = 10;
+            this.account.Text = "Mi Cuenta";
+            this.account.UseVisualStyleBackColor = false;
+            // 
+            // regulation
+            // 
+            this.regulation.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.regulation.BackColor = System.Drawing.Color.Transparent;
+            this.regulation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.regulation.FlatAppearance.BorderSize = 0;
+            this.regulation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.regulation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.regulation.Font = new System.Drawing.Font("DM Sans", 14F);
+            this.regulation.Location = new System.Drawing.Point(165, 51);
+            this.regulation.Name = "regulation";
+            this.regulation.Size = new System.Drawing.Size(119, 38);
+            this.regulation.TabIndex = 7;
+            this.regulation.Text = "Regulacion";
+            this.regulation.UseVisualStyleBackColor = false;
+            this.regulation.Click += new System.EventHandler(this.regulation_Click_1);
+            // 
+            // shop
+            // 
+            this.shop.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.shop.BackColor = System.Drawing.Color.Transparent;
+            this.shop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.shop.FlatAppearance.BorderSize = 0;
+            this.shop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.shop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.shop.Font = new System.Drawing.Font("DM Sans", 14F);
+            this.shop.Location = new System.Drawing.Point(12, 54);
+            this.shop.Name = "shop";
+            this.shop.Size = new System.Drawing.Size(130, 33);
+            this.shop.TabIndex = 5;
+            this.shop.Text = "Tienda";
+            this.shop.UseVisualStyleBackColor = false;
+            this.shop.Click += new System.EventHandler(this.shop_Click_1);
+            // 
             // iconButton2
             // 
             this.iconButton2.BackColor = System.Drawing.Color.Transparent;
@@ -227,39 +279,6 @@ namespace OMA.FORMS
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
-            // settings
-            // 
-            this.settings.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.settings.BackColor = System.Drawing.Color.Transparent;
-            this.settings.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settings.FlatAppearance.BorderSize = 0;
-            this.settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settings.Font = new System.Drawing.Font("DM Sans", 14F);
-            this.settings.Location = new System.Drawing.Point(639, 54);
-            this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(150, 31);
-            this.settings.TabIndex = 11;
-            this.settings.Text = "Cerrar Sesion";
-            this.settings.UseVisualStyleBackColor = false;
-            this.settings.Click += new System.EventHandler(this.settings_Click_1);
-            // 
-            // account
-            // 
-            this.account.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.account.BackColor = System.Drawing.Color.Transparent;
-            this.account.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.account.FlatAppearance.BorderSize = 0;
-            this.account.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.account.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.account.Font = new System.Drawing.Font("DM Sans", 14F);
-            this.account.Location = new System.Drawing.Point(491, 51);
-            this.account.Name = "account";
-            this.account.Size = new System.Drawing.Size(129, 38);
-            this.account.TabIndex = 10;
-            this.account.Text = "Mi Cuenta";
-            this.account.UseVisualStyleBackColor = false;
-            // 
             // OMA
             // 
             this.OMA.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -278,39 +297,21 @@ namespace OMA.FORMS
             this.OMA.UseVisualStyleBackColor = false;
             this.OMA.Click += new System.EventHandler(this.OMA_Click_1);
             // 
-            // regulation
+            // prender
             // 
-            this.regulation.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.regulation.BackColor = System.Drawing.Color.Transparent;
-            this.regulation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.regulation.FlatAppearance.BorderSize = 0;
-            this.regulation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.regulation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.regulation.Font = new System.Drawing.Font("DM Sans", 14F);
-            this.regulation.Location = new System.Drawing.Point(165, 51);
-            this.regulation.Name = "regulation";
-            this.regulation.Size = new System.Drawing.Size(119, 38);
-            this.regulation.TabIndex = 7;
-            this.regulation.Text = "Regulacion";
-            this.regulation.UseVisualStyleBackColor = false;
-            this.regulation.Click += new System.EventHandler(this.regulation_Click_1);
-            // 
-            // shop
-            // 
-            this.shop.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.shop.BackColor = System.Drawing.Color.Transparent;
-            this.shop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.shop.FlatAppearance.BorderSize = 0;
-            this.shop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.shop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.shop.Font = new System.Drawing.Font("DM Sans", 14F);
-            this.shop.Location = new System.Drawing.Point(12, 54);
-            this.shop.Name = "shop";
-            this.shop.Size = new System.Drawing.Size(130, 33);
-            this.shop.TabIndex = 5;
-            this.shop.Text = "Tienda";
-            this.shop.UseVisualStyleBackColor = false;
-            this.shop.Click += new System.EventHandler(this.shop_Click_1);
+            this.prender.BackColor = System.Drawing.Color.Transparent;
+            this.prender.BackgroundImage = global::OMA.Properties.Resources.Group_8__1_;
+            this.prender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.prender.FlatAppearance.BorderSize = 0;
+            this.prender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.prender.Font = new System.Drawing.Font("DM Sans", 15F);
+            this.prender.ForeColor = System.Drawing.Color.Black;
+            this.prender.Location = new System.Drawing.Point(144, 49);
+            this.prender.Name = "prender";
+            this.prender.Size = new System.Drawing.Size(148, 51);
+            this.prender.TabIndex = 15;
+            this.prender.UseVisualStyleBackColor = false;
+            this.prender.Click += new System.EventHandler(this.prender_Click_1);
             // 
             // Regulacion
             // 

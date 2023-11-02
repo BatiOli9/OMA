@@ -65,7 +65,7 @@ namespace OMA.FORMS
         {
             public int id;
             public string nombre;
-            public decimal mail;
+            public string mail;
             public string username;
             public string password;
             public string admin;
@@ -95,7 +95,7 @@ namespace OMA.FORMS
                 {
                     Usuario usuario = new Usuario();
                     usuario.id = resultados.GetInt32(0);
-                    // usuario.mail = resultados.GetString(1);
+                    usuario.mail = resultados.GetString(1);
                     usuario.password = resultados.GetString(2);
                     usuario.username = resultados.GetString(3);
                     usuario.admin = resultados.GetString(4);
@@ -117,6 +117,7 @@ namespace OMA.FORMS
                     UserAdminControl udc = new UserAdminControl();
 
                     udc.Nombre = usuario.username;
+                    udc.Mail = usuario.mail;
                     udc.Jerarquia = adminProp;
                     udc.Contraseña = usuario.password;
 

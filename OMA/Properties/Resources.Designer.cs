@@ -113,6 +113,26 @@ namespace OMA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_8 {
+            get {
+                object obj = ResourceManager.GetObject("Group 8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_8__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 8 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap limpiador {
             get {
                 object obj = ResourceManager.GetObject("limpiador", resourceCulture);

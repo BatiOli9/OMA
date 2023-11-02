@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 
+
 namespace OMA.FORMS
 {
     public partial class Regulacion : Form
@@ -45,19 +46,22 @@ namespace OMA.FORMS
             
         }
 
+        System.Drawing.Image imageOn = Properties.Resources.Group_8;
+        System.Drawing.Image imageOff = Properties.Resources.Group_8__1_;
+
         private void prender_Click_1(object sender, EventArgs e)
         {
-            if (prender.BackColor == Color.Lime)
+            if (prender.BackgroundImage == imageOff)
             {
-                prender.BackColor = Color.Red;
+                prender.BackgroundImage = imageOn;
                 prender.Text = "Apagar";
-                arduino.PortName = "COM3";
+                arduino.PortName = "COM6";
                 arduino.BaudRate = 9600; 
                 arduino.Open();
             }
-            else if (prender.BackColor == Color.Red)
+            else if (prender.BackgroundImage == imageOn)
             {
-                prender.BackColor = Color.Lime;
+                prender.BackgroundImage = imageOff;
                 prender.Text = "Encender";
                 arduino.Close();
             }
